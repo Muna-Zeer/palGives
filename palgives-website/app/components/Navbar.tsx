@@ -21,21 +21,21 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center space-x-6 text-slate-800 font-medium">
             <Link
               href="/"
-              className="px-3 py-2 text-sm uppercase tracking-wider font-bold text-white bg-slate-900 rounded hover:bg-amber-500 transition-colors"
+              className="px-3 py-2 text-sm uppercase tracking-wider font-bold text-black bg-[#F3D03E] rounded transition-colors"
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className="text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider"
+              className="text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider"
             >
               About Us
             </Link>
 
             {/* Donate Dropdown / Link */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">
+              <button className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider">
                 <span>Donate Now</span>
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                   <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
@@ -50,7 +50,7 @@ export default function Navbar() {
               onMouseLeave={() => setIsProgramOpen(false)}
             >
               <button
-                className="flex items-center space-x-1 text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider focus:outline-none py-2"
+                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider focus:outline-none py-2"
               >
                 <span>Our Programs</span>
                 <svg className={`w-4 h-4 transition-transform ${isProgramOpen ? 'rotate-180 text-amber-500' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +121,7 @@ export default function Navbar() {
 
             {/* Contact Us Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-slate-700 hover:text-amber-600 transition-colors text-sm uppercase tracking-wider">
+              <button className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider">
                 <span>Contact Us</span>
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
                   <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
@@ -148,7 +148,7 @@ export default function Navbar() {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-slate-800 hover:text-amber-500 p-2 focus:outline-none"
+                className="text-slate-800 hover:text-[#F3D03E] p-2 focus:outline-none"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {isMobileMenuOpen ? (
