@@ -81,39 +81,7 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-
-                  {/* Right Column: Preview Dynamic Card */}
-                  <div className="col-span-5 bg-slate-900 rounded-lg p-4 text-white flex flex-col justify-between">
-                    <div>
-                      <span className="inline-block px-2.5 py-0.5 text-[10px] font-bold bg-amber-500 text-slate-900 rounded-full uppercase tracking-wide mb-2">
-                        {activeProgram.badge}
-                      </span>
-                      <h4 className="text-sm font-bold text-amber-400 mb-1 leading-snug">
-                        {activeProgram.title}
-                      </h4>
-                      <p className="text-xs text-slate-300 leading-relaxed">
-                        {activeProgram.summary}
-                      </p>
-                    </div>
-
-                    <div className="mt-4">
-                      <div className="relative w-full h-24 rounded overflow-hidden bg-slate-800 mb-3">
-                        <Image
-                          src={activeProgram.image}
-                          alt={activeProgram.title}
-                          fill
-                          className="object-cover"
-                          unoptimized
-                        />
-                      </div>
-                      <Link
-                        href={`/programs/${activeProgram.slug}`}
-                        className="block text-center w-full py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 text-xs font-bold rounded transition-colors"
-                      >
-                        Explore Program →
-                      </Link>
-                    </div>
-                  </div>
+                
 
                 </div>
               )}
