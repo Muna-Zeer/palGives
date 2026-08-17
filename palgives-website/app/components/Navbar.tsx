@@ -50,27 +50,26 @@ export default function Navbar() {
               onMouseLeave={() => setIsProgramOpen(false)}
             >
               <button
-                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider focus:outline-none py-2"
+                type="button"
+                onClick={() => setIsProgramOpen((prev) => !prev)}
+                className="text-slate-700 hover:text-amber-600 font-medium py-2 flex items-center gap-1"
               >
-                <span>Our Programs</span>
-                <svg className={`w-4 h-4 transition-transform ${isProgramOpen ? 'rotate-180 text-amber-500' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
+                Programs
               </button>
 
-              {/* Mega Menu Overlay */}
+              {/* Mega Menu Dropdown */}
               {isProgramOpen && (
-                <div className="absolute left-0 mt-0 w-[680px] bg-white rounded-xl shadow-2xl border border-slate-100 p-6 grid grid-cols-12 gap-6 transition-all duration-200 animate-fadeIn">
+                <div className="absolute left-0 top-full w-[680px] bg-white rounded-xl shadow-2xl border border-slate-100 p-6 grid grid-cols-12 gap-6 z-50">
+                  <div className="col-span-12 space-y-2">
+                    <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">
+                      Impact Focus Areas
+                    </p>
 
-                  {/* Left Column: Program Items */}
-                  <div className="col-span-7 space-y-2">
-                    <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">Impact Focus Areas</p>
                     {programs.map((item) => (
                       <Link
                         key={item.slug}
                         href={`/programs/${item.slug}`}
-                          onClick={()=>setIsProgramOpen(false)}
-                        // onMouseEnter={() => setActiveProgram(item)}
+                        onClick={() => setIsProgramOpen(false)}
                         className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
                         <div className="text-sm font-semibold text-slate-800 group-hover:text-amber-600">
@@ -82,8 +81,6 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-                
-
                 </div>
               )}
             </div>
