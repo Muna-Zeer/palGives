@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50">
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* Hero Section Placeholder */}
       <section className="max-w-7xl mx-auto px-4 py-20 text-center">
         <h1 className="text-5xl font-extrabold text-slate-900 mb-4">

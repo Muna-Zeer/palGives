@@ -69,7 +69,8 @@ export default function Navbar() {
                       <Link
                         key={item.slug}
                         href={`/programs/${item.slug}`}
-                        onMouseEnter={() => setActiveProgram(item)}
+                          onClick={()=>setIsProgramOpen(false)}
+                        // onMouseEnter={() => setActiveProgram(item)}
                         className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
                         <div className="text-sm font-semibold text-slate-800 group-hover:text-amber-600">
