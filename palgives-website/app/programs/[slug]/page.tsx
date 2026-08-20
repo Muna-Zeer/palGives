@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
 import YouthDevelopment from "@/app/programs/YouthDevelopment";
 import EducationProgram from "@/app/programs/EducationProgram";
+import WomensEmpowerment from "@/app/programs/WomensEmpowerment";
 const programComponents: Record<string, ComponentType> = {
   "youth-development-entrepreneurship": YouthDevelopment,
   "education-program": EducationProgram,
+  "womens-empowerment": WomensEmpowerment,
 };
 
 export default async function ProgramPage({
