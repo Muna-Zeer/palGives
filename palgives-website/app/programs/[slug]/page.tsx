@@ -3,10 +3,14 @@ import type { ComponentType } from "react";
 import YouthDevelopment from "@/app/programs/YouthDevelopment";
 import EducationProgram from "@/app/programs/EducationProgram";
 import WomensEmpowerment from "@/app/programs/WomensEmpowerment";
+import MentalHealthFamilySupport from "@/app/programs/MentalHealthFamilySupport";
+import ChildPreventiveHealthProgram from "@/app/programs/ChildPreventiveHealthProgram";
 const programComponents: Record<string, ComponentType> = {
   "youth-development-entrepreneurship": YouthDevelopment,
   "education-program": EducationProgram,
   "womens-empowerment": WomensEmpowerment,
+  "mental-health-family-support":MentalHealthFamilySupport,
+  "child-preventive-health-program":ChildPreventiveHealthProgram,
 };
 
 export default async function ProgramPage({
