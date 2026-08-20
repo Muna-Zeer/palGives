@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { programs } from '../data/programs';
 
-
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
   const [activeProgram, setActiveProgram] = useState(programs[0]);
@@ -87,12 +86,12 @@ export default function Navbar() {
 
             {/* Contact Us Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider">
+              <Link
+                href="/contact"
+                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+              >
                 <span>Contact Us</span>
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                  <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                </svg>
-              </button>
+              </Link>
             </div>
           </nav>
 
@@ -102,7 +101,6 @@ export default function Navbar() {
               <span className="text-2xl font-black text-slate-900 tracking-tight">
                 Pal<span className="text-amber-500">Gives</span>
               </span>
-              {/* Replace with actual logo SVG or PNG */}
               <div className="w-9 h-9 relative">
                 <div className="w-full h-full bg-amber-500 rounded-full flex items-center justify-center text-slate-900 font-bold text-xs shadow-sm">
                   PG
@@ -148,8 +146,9 @@ export default function Navbar() {
           </div>
 
           <Link href="/donate" className="block text-slate-800 font-semibold py-2">Donate Now</Link>
-          <Link href="/contact" className="block text-slate-800 font-semibold py-2">Contact Us</Link>
-        </div>
+          <Link href="/contact" className="block text-slate-800 font-semibold py-2">
+            Contact Us
+          </Link>        </div>
       )}
     </header>
   );
