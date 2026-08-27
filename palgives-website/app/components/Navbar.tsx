@@ -34,12 +34,12 @@ export default function Navbar() {
 
             {/* Donate Dropdown / Link */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider">
+              <Link
+                href="/donate"
+                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+              >
                 <span>Donate Now</span>
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                  <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                </svg>
-              </button>
+              </Link>
             </div>
 
             {/* Our Programs Dynamic Mega Dropdown */}
@@ -145,8 +145,12 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link href="/donate" className="block text-slate-800 font-semibold py-2">Donate Now</Link>
-          <Link href="/contact" className="block text-slate-800 font-semibold py-2">
+          <Link
+            href="/donate"
+            className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+          >
+            Donate Now
+          </Link>          <Link href="/contact" className="block text-slate-800 font-semibold py-2">
             Contact Us
           </Link>        </div>
       )}
