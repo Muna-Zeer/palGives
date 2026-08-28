@@ -44,7 +44,7 @@ export default function ChildPreventiveHealthProgram() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/child-health-1.jpg" // Update with your actual image path
+                src="/images/programs/child1.jpg" 
                 alt="Medical health screening for children"
                 fill
                 className="object-cover"
@@ -69,7 +69,7 @@ export default function ChildPreventiveHealthProgram() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-16 border-t border-slate-900/20">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white order-2 md:order-1">
               <Image
-                src="/images/child-health-2.jpg" // Update with your actual image path
+                src="/images/programs/child7.jpg" 
                 alt="Nutritional and health workshop"
                 fill
                 className="object-cover"
@@ -112,7 +112,7 @@ export default function ChildPreventiveHealthProgram() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/child-health-pillar-1.jpg" // Update with your actual image path
+                  src="/images/programs/child8.jpg" 
                   alt="Early Medical Screening"
                   fill
                   className="object-cover"
@@ -134,7 +134,7 @@ export default function ChildPreventiveHealthProgram() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/child-health-pillar-2.jpg" // Update with your actual image path
+                  src="/images/programs/child-health-8.jpg"
                   alt="Nutritional Support"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function ChildPreventiveHealthProgram() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/child-health-pillar-3.jpg" // Update with your actual image path
+                  src="/images/programs/child-health-9.jpg" 
                   alt="Health Education"
                   fill
                   className="object-cover"
