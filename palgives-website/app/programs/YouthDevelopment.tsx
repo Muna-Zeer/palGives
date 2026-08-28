@@ -44,7 +44,7 @@ export default function YouthDevelopment() {
                 <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                         <Image
-                            src="/images/youth-1.jpg" // Update with your actual image path
+                            src="/images/programs/youth11.jpg" 
                             alt="Youth workshop"
                             fill
                             className="object-cover"
@@ -113,7 +113,7 @@ export default function YouthDevelopment() {
 
                     <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200 order-1 md:order-2">
                         <Image
-                            src="/images/youth-2.jpg" // Update with your actual image path
+                            src="/images/programs/youth20.jpg" 
                             alt="Youth training session"
                             fill
                             className="object-cover"
@@ -127,7 +127,7 @@ export default function YouthDevelopment() {
                 <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200">
                         <Image
-                            src="/images/youth-3.jpg" // Update with your actual image path
+                            src="/images/programs/youth18.jpg" 
                             alt="Classroom interactive workshop"
                             fill
                             className="object-cover"
@@ -169,7 +169,7 @@ export default function YouthDevelopment() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
                         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                             <Image
-                                src="/images/youth-4.jpg"
+                                src="/images/programs/youth6.jpg"
                                 alt="Group table discussion"
                                 fill
                                 className="object-cover"
@@ -197,7 +197,7 @@ export default function YouthDevelopment() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-20 sm:pt-28 border-t border-slate-900/20">
                         <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white order-2 md:order-1">
                             <Image
-                                src="/images/youth-5.jpg"
+                                src="/images/programs/youth5.jpg"
                                 alt="Presentation and lecture hall"
                                 fill
                                 className="object-cover"

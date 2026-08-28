@@ -102,8 +102,14 @@ export default function Navbar() {
                 Pal<span className="text-amber-500">Gives</span>
               </span>
               <div className="w-9 h-9 relative">
-                <div className="w-full h-full bg-amber-500 rounded-full flex items-center justify-center text-slate-900 font-bold text-xs shadow-sm">
-                  PG
+                <div className="w-9 h-9 relative">
+                  <Image
+                    src="/images/PalGives_logo.jpg"
+                    alt=""
+                    fill
+                    sizes="36px"
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </Link>

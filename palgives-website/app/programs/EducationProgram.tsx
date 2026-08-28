@@ -70,7 +70,7 @@ export default function EducationProgram() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/education-1.jpg" // Update with your actual image path
+                src="/images/programs/youth22.jpg" 
                 alt="Interactive learning session"
                 fill
                 className="object-cover"
@@ -107,7 +107,7 @@ export default function EducationProgram() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-16 border-t border-slate-900/20">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white order-2 md:order-1">
               <Image
-                src="/images/education-2.jpg" // Update with your actual image path
+                src="/images/programs/youth23.jpg" 
                 alt="Students collaborating"
                 fill
                 className="object-cover"
@@ -139,7 +139,7 @@ export default function EducationProgram() {
           
           <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200">
             <Image
-              src="/images/education-3.jpg" // Update with your actual image path
+              src="/images/programs/youth24.jpg" 
               alt="Classroom students"
               fill
               className="object-cover"
