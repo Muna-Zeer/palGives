@@ -44,7 +44,7 @@ export default function WomensEmpowerment() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200">
               <Image
-                src="/images/women-1.jpg" // Update with your actual image path
+                src="/images/programs/youth25.jpg" 
                 alt="Women group discussion"
                 fill
                 className="object-cover"
@@ -69,7 +69,7 @@ export default function WomensEmpowerment() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-16 border-t border-slate-300/60">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200 order-2 md:order-1">
               <Image
-                src="/images/women-2.jpg" // Update with your actual image path
+                src="/images/programs/youth14.jpg" 
                 alt="Women workshop participants"
                 fill
                 className="object-cover"
@@ -147,7 +147,7 @@ export default function WomensEmpowerment() {
           <div className="space-y-6">
             <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/women-3.jpg" // Update with your actual image path
+                src="/images/programs/youth5.jpg" 
                 alt="Entrepreneurship training"
                 fill
                 className="object-cover"
@@ -155,7 +155,7 @@ export default function WomensEmpowerment() {
             </div>
             <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/women-4.jpg" // Update with your actual image path
+                src="/images/programs/youth26.jpg" 
                 alt="Mentorship and support circle"
                 fill
                 className="object-cover"
