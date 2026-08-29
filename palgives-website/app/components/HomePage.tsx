@@ -57,7 +57,7 @@ export default function HomePage() {
                     </div>
                     <div className="relative w-full h-64 md:h-72 rounded-lg overflow-hidden shadow-md">
                         <Image
-                            src="/images/vision-mission.jpg"
+                            src="/images/programs/youth2.jpg"
                             alt="Vision and Mission workshop"
                             fill
                             className="object-cover"
@@ -80,7 +80,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative w-full h-64 md:h-72 rounded-lg overflow-hidden shadow-md">
                     <Image
-                        src="/images/strategic-objectives.jpg"
+                        src="/images/programs/youth9.jpg"
                         alt="Strategic Objectives event"
                         fill
                         className="object-cover"
@@ -104,7 +104,7 @@ export default function HomePage() {
                     </div>
                     <div className="relative w-full h-64 md:h-72 rounded-lg overflow-hidden shadow-md">
                         <Image
-                            src="/images/core-values.jpg"
+                            src="/images/programs/youth28.jpg"
                             alt="Core Values activity"
                             fill
                             className="object-cover"
@@ -126,7 +126,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative w-full h-64 md:h-72 rounded-lg overflow-hidden shadow-md">
                     <Image
-                        src="/images/donate-section.jpg"
+                        src="/images/programs/youth27.jpg"
                         alt="Community Support"
                         fill
                         className="object-cover"
