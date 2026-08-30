@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { programs } from '../data/programs';
+import { VOLUNTEER_FORM_URL } from "../constants";
 
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
@@ -17,26 +18,30 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
 
           {/* Navigation Links (Left Side) */}
-          <nav className="hidden md:flex items-center space-x-6 text-slate-800 font-medium">
+          <nav className="flex items-center space-x-1 gap-6 md:gap-8 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+          >
             <Link
               href="/"
               className="px-3 py-2 text-sm uppercase tracking-wider font-bold text-black bg-[#F3D03E] rounded transition-colors"
             >
               Home
             </Link>
-
+            
             <Link
               href="/about"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider"
             >
               About Us
             </Link>
 
+
             {/* Donate Dropdown / Link */}
             <div className="relative group">
               <Link
                 href="/donate"
-                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+                className="flex items-center pg-4 space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
                 <span>Donate Now</span>
               </Link>
@@ -51,16 +56,17 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setIsProgramOpen((prev) => !prev)}
-                className="text-slate-700 hover:text-amber-600 font-medium py-2 flex items-center gap-1"
+                className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
                 Programs
               </button>
+
 
               {/* Mega Menu Dropdown */}
               {isProgramOpen && (
                 <div className="absolute left-0 top-full w-[680px] bg-white rounded-xl shadow-2xl border border-slate-100 p-6 grid grid-cols-12 gap-6 z-50">
                   <div className="col-span-12 space-y-2">
-                    <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">
+                    <p className="text-xs font-semibold text-[#F3D03E] uppercase tracking-widest mb-2">
                       Impact Focus Areas
                     </p>
 
@@ -71,7 +77,7 @@ export default function Navbar() {
                         onClick={() => setIsProgramOpen(false)}
                         className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
-                        <div className="text-sm font-semibold text-slate-800 group-hover:text-amber-600">
+                        <div className="text-sm font-semibold text-slate-800 group-hover:text-[#F3D03E]">
                           {item.title}
                         </div>
                         <div className="text-xs text-slate-500 line-clamp-1">
@@ -92,7 +98,14 @@ export default function Navbar() {
               >
                 <span>Contact Us</span>
               </Link>
+
             </div>
+            <Link
+              href={VOLUNTEER_FORM_URL}
+              className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
+            >
+              Volunteer
+            </Link>
           </nav>
 
           {/* Logo Brand (Right Side matching original design) */}
@@ -159,12 +172,12 @@ export default function Navbar() {
           </Link>          <Link href="/contact" className="block text-slate-800 font-semibold py-2">
             Contact Us
           </Link>
-          <Link 
-    href="/volunteer" 
-    className="px-4 py-2 text-sm font-bold uppercase tracking-wider text-gray-900 bg-yellow-400 hover:bg-yellow-500 rounded transition-all shadow-sm"
-  >
-    Volunteer
-  </Link>        </div>
+          <Link
+            href={VOLUNTEER_FORM_URL}
+            className="px-4 py-2 text-sm font-bold uppercase tracking-wider text-gray-900 bg-yellow-400 hover:bg-yellow-500 rounded transition-all shadow-sm"
+          >
+            Volunteer
+          </Link>        </div>
       )}
     </header>
   );

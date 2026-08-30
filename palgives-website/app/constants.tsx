@@ -1,1 +1,1 @@
-export const VOULNTEER_FORM_URL="https://docs.google.com/forms/d/e/1FAIpQLSe0iWCfFKU40ubtS217RYOPXAipwjVmRS0DGILeM86yZGB5Zw/viewform?pli=1";
+export const VOLUNTEER_FORM_URL="https://docs.google.com/forms/d/e/1FAIpQLSe0iWCfFKU40ubtS217RYOPXAipwjVmRS0DGILeM86yZGB5Zw/viewform?pli=1";
