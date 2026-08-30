@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="w-full min-h-screen bg-white text-gray-800">
 
             {/* 1. Hero Section */}
-            <section className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+            <section className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/')" }}>
                 <h1 className="text-4xl md:text-6xl font-black tracking-widest uppercase text-gray-900">
                     PALGIVES
                 </h1>

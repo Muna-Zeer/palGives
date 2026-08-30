@@ -36,21 +36,17 @@ export default function ContactPage() {
                 Email Addresses
               </h3>
               <ul className="space-y-2 text-sm text-slate-700 font-medium">
-                <li>
-                  <a href="mailto:PalGives@Outlook.com" className="hover:text-amber-600 underline decoration-slate-300">
-                    PalGives@Outlook.com
-                  </a>
-                </li>
-                <li>
+               <li>
                   <a href="mailto:info@palgive.org" className="hover:text-amber-600 underline decoration-slate-300">
                     info@palgive.org
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:khalil-kamel@yahoo.com" className="hover:text-amber-600 underline decoration-slate-300">
-                    khalil-kamel@yahoo.com
+                  <a href="mailto:PalGives@Outlook.com" className="hover:text-amber-600 underline decoration-slate-300">
+                    PalGives@Outlook.com
                   </a>
                 </li>
+               
               </ul>
             </div>
 

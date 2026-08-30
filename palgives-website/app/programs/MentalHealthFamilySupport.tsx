@@ -5,9 +5,9 @@ import Image from 'next/image';
 export default function MentalHealthFamilySupport() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
-      
+
       {/* 1. HERO SECTION */}
-      <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
+      <section className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/')" }}>
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
             Impact Program
@@ -39,7 +39,7 @@ export default function MentalHealthFamilySupport() {
       {/* 3. PROGRAM GOALS & EXPECTED OUTCOMES (YELLOW BANNER) */}
       <section className="bg-[#F3D03E] py-20 sm:py-28 px-6 sm:px-12 text-slate-900">
         <div className="max-w-5xl mx-auto space-y-20 sm:space-y-24">
-          
+
           {/* Program Goals Block */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
@@ -69,7 +69,7 @@ export default function MentalHealthFamilySupport() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-16 border-t border-slate-900/20">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white order-2 md:order-1">
               <Image
-                src="/images/programs/Health2.jpg" 
+                src="/images/programs/Health2.jpg"
                 alt="Outdoor community activity"
                 fill
                 className="object-cover"
@@ -95,7 +95,7 @@ export default function MentalHealthFamilySupport() {
       {/* 4. PROGRAM PILLARS */}
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto space-y-12">
-          
+
           <div className="text-center space-y-3">
             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
               Core Strategy
@@ -107,7 +107,7 @@ export default function MentalHealthFamilySupport() {
 
           {/* 3 Pillar Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+
             {/* Pillar 1 */}
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
@@ -134,7 +134,7 @@ export default function MentalHealthFamilySupport() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/Health4.jpg" 
+                  src="/images/programs/Health4.jpg"
                   alt="Family Support"
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default function MentalHealthFamilySupport() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/Health5.jpg" 
+                  src="/images/programs/women-health-6.jpg"
                   alt="Training & Life Skills"
                   fill
                   className="object-cover"
