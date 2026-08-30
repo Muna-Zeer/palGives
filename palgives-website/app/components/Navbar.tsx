@@ -158,7 +158,13 @@ export default function Navbar() {
             Donate Now
           </Link>          <Link href="/contact" className="block text-slate-800 font-semibold py-2">
             Contact Us
-          </Link>        </div>
+          </Link>
+          <Link 
+    href="/volunteer" 
+    className="px-4 py-2 text-sm font-bold uppercase tracking-wider text-gray-900 bg-yellow-400 hover:bg-yellow-500 rounded transition-all shadow-sm"
+  >
+    Volunteer
+  </Link>        </div>
       )}
     </header>
   );

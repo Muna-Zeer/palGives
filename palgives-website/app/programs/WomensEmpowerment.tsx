@@ -147,7 +147,7 @@ export default function WomensEmpowerment() {
           <div className="space-y-6">
             <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/programs/youth5.jpg" 
+                src="/images/programs/women-2.jpg" 
                 alt="Entrepreneurship training"
                 fill
                 className="object-cover"

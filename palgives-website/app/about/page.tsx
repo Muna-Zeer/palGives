@@ -6,63 +6,63 @@ export default function TeamPage() {
     name: "Dr. Bisan Sarahneh",
     role: "Director of the Medical Committee",
     description: "Director of the Medical Committee at PalGives, overseeing all medical and health-related activities, ensuring quality healthcare and support for children, youth, and the local community.",
-    image: "/images/team/bisan.jpg"
+    image: "/images/teamMembers/Bisan.png"
   },
   {
     id: 2,
     name: "Mr. Khalil Abu Kamel",
     role: "General Director",
     description: "General Director of PalGives, overseeing the organization's management and strategies, and leading the team to implement programs and initiatives that empower children, youth, and women in the Palestinian community.",
-    image: "/images/team/khalil-kamel.jpg"
+    image: "/images/teamMembers/khalil-abu-kamel.png"
   },
   {
     id: 3,
     name: "Ms. Aya Jomaa",
     role: "Northern Area Coordinator",
     description: "Northern Area Coordinator at PalGives, responsible for coordinating activities and initiatives in the northern region, supporting children, youth, and the local community to ensure programs reach all beneficiaries effectively.",
-    image: "/images/team/aya.jpg"
+    image: "/images/teamMembers/Aya.png"
   },
   {
     id: 4,
     name: "Mr. Anas Abu Joudeh",
     role: "Executive Director",
     description: "Executive Director of PalGives, leading the organization's daily operations and ensuring effective implementation of programs and initiatives to fulfill the organization's mission of empowering children, youth, and women in the Palestinian community.",
-    image: "/images/team/anas.jpg"
+    image: "/images/teamMembers/Anas.png"
   },
   {
     id: 5,
     name: "Dr. Ammar Al-Wahidi",
     role: "Training & Supervision Volunteer",
     description: "A volunteer at PalGives specializing in training and team supervision, contributing his expertise to develop the skills of children and youth and support teams implementing projects.",
-    image: "/images/team/ammar.jpg"
+    image: "/images/teamMembers/Ammar.png"
   },
   {
     id: 6,
     name: "Dr. Halima Malash",
     role: "Medical Committee Volunteer",
     description: "Is a volunteer with the Medical Committee at PalGives, providing healthcare guidance and raising health awareness among children, youth, and the community.",
-    image: "/images/team/halima.jpg"
+    image: "/images/teamMembers/Halimah.png"
   },
   {
     id: 7,
     name: "Mr. Khalil Radwan",
     role: "Community Committee Volunteer",
     description: "An ambitious young Jerusalemite, volunteering with the Community Committee at PalGives. He contributes his energy and skills to support community projects and empower youth and children locally.",
-    image: "/images/team/khalil-radwan.jpg"
+    image: "/images/teamMembers/khalil.png"
   },
   {
     id: 8,
     name: "Ms. Duha Ibrahim",
     role: "Director of Media and Communications",
     description: "Director of the Media and Communications Unit at PalGives, overseeing all media activities, coverage, and communication to highlight the organization's programs and initiatives.",
-    image: "/images/team/duha.jpg"
+    image: "/images/teamMembers/Duha.png"
   },
   {
     id: 9,
     name: "Mr. Baher Obeidieh",
     role: "Program Director",
     description: "Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and enhance their role in the community.",
-    image: "/images/team/baher.jpg"
+    image: "/images/teamMembers/baher.png"
   }
 ];
   return (
