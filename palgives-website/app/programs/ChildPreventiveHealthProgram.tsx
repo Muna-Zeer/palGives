@@ -156,7 +156,7 @@ export default function ChildPreventiveHealthProgram() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/child-health-9.jpg" 
+                  src="/images/programs/women-health-9.png" 
                   alt="Health Education"
                   fill
                   className="object-cover"
