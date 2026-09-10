@@ -8,6 +8,7 @@ import { programs } from '../data/programs';
 import { VOLUNTEER_FORM_URL } from "../constants";
 import SearchBar from './SearchBar';
 import InPageSearch from './SearchBar';
+import GoogleTranslate from './GoogleTranslate';
 
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
@@ -113,6 +114,7 @@ export default function Navbar() {
         <div className ="flex items-center gap-4 ">
           <InPageSearch />
         </div>
+        <GoogleTranslate />
           {/* Logo Brand (Right Side matching original design) */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
