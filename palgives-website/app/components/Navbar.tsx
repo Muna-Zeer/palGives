@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { programs } from '../data/programs';
 import { VOLUNTEER_FORM_URL } from "../constants";
+import SearchBar from './SearchBar';
+import InPageSearch from './SearchBar';
 
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
@@ -108,6 +110,9 @@ export default function Navbar() {
             </Link>
           </nav>
 
+        <div className ="flex items-center gap-4 ">
+          <InPageSearch />
+        </div>
           {/* Logo Brand (Right Side matching original design) */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
