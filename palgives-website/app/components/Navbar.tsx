@@ -8,13 +8,13 @@ import { programs } from '../data/programs';
 import { VOLUNTEER_FORM_URL } from "../constants";
 import SearchBar from './SearchBar';
 import InPageSearch from './SearchBar';
-import GoogleTranslate from './GoogleTranslate';
-
+import { useLocale, useTranslations } from 'next-intl';
+import LanguageSelector from './LanguageSelector';
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
   const [activeProgram, setActiveProgram] = useState(programs[0]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+   const locale = useLocale();
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -114,7 +114,7 @@ export default function Navbar() {
         <div className ="flex items-center gap-4 ">
           <InPageSearch />
         </div>
-        <GoogleTranslate />
+        <LanguageSelector />
           {/* Logo Brand (Right Side matching original design) */}
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">

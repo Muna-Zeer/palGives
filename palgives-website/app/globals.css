@@ -24,15 +24,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.goog-te-banner-frame {
+/* 1. Hide Google Translate iframe top banner */
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
+/* 2. Reset top body offset forced by Google Translate */
 body {
   top: 0px !important;
+  position: static !important;
 }
 
-.goog-te-gadget {
+/* 3. Hide Google widget, gadget, and attribution text */
+#google_translate_element,
+.goog-te-gadget,
+.goog-te-combo {
   display: none !important;
+}
+
+/* 4. Hide hover tooltips over translated text */
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
