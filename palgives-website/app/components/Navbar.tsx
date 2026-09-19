@@ -15,6 +15,7 @@ export default function Navbar() {
   const [activeProgram, setActiveProgram] = useState(programs[0]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
    const locale = useLocale();
+   const t = useTranslations('Navbar');
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,29 +25,29 @@ export default function Navbar() {
           <nav className="flex items-center space-x-1 gap-6 md:gap-8 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
           >
             <Link
-              href="/"
+              href={`/${locale}`}
               className="px-3 py-2 text-sm uppercase tracking-wider font-bold text-black bg-[#F3D03E] rounded transition-colors"
             >
-              Home
+              {t('home')}
             </Link>
             
             <Link
-              href="/about"
+              href={`/${locale}/about`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider"
             >
-              About Us
+              {t('about')}
             </Link>
 
 
             {/* Donate Dropdown / Link */}
             <div className="relative group">
               <Link
-                href="/donate"
+                href={`/${locale}/donate`}
                 className="flex items-center pg-4 space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                <span>Donate Now</span>
+                <span>{t('donate')}</span>
               </Link>
             </div>
 
@@ -61,7 +62,7 @@ export default function Navbar() {
                 onClick={() => setIsProgramOpen((prev) => !prev)}
                 className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                Programs
+                {t('programs')}
               </button>
 
 
@@ -76,7 +77,7 @@ export default function Navbar() {
                     {programs.map((item) => (
                       <Link
                         key={item.slug}
-                        href={`/programs/${item.slug}`}
+                        href={`/${locale}/programs/${item.slug}`}
                         onClick={() => setIsProgramOpen(false)}
                         className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
@@ -96,10 +97,10 @@ export default function Navbar() {
             {/* Contact Us Dropdown */}
             <div className="relative group">
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                <span>Contact Us</span>
+                <span>{t('contact')}</span>
               </Link>
 
             </div>
@@ -107,7 +108,7 @@ export default function Navbar() {
               href={VOLUNTEER_FORM_URL}
               className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
             >
-              Volunteer
+              {t('volunteer')}
             </Link>
           </nav>
 
@@ -117,7 +118,7 @@ export default function Navbar() {
         <LanguageSelector />
           {/* Logo Brand (Right Side matching original design) */}
           <div className="flex items-center space-x-3">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href={`/${locale}`} className="flex items-center space-x-2">
               <span className="text-2xl font-black text-slate-900 tracking-tight">
                 Pal<span className="text-amber-500">Gives</span>
               </span>
@@ -157,14 +158,14 @@ export default function Navbar() {
       {/* Mobile Drawer Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3">
-          <Link href="/" className="block text-slate-800 font-semibold py-2">Home</Link>
-          <Link href="/about" className="block text-slate-800 font-semibold py-2">About Us</Link>
+          <Link href={`/${locale}`} className="block text-slate-800 font-semibold py-2">Home</Link>
+          <Link href={`/${locale}/about`} className="block text-slate-800 font-semibold py-2">About Us</Link>
 
           <div className="py-2">
             <p className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2">Our Programs</p>
             <div className="pl-3 space-y-2 border-l-2 border-amber-400">
               {programs.map((p) => (
-                <Link key={p.slug} href={`/programs/${p.slug}`} className="block text-sm text-slate-600 hover:text-amber-600">
+                <Link key={p.slug} href={`/${locale}/programs/${p.slug}`} className="block text-sm text-slate-600 hover:text-amber-600">
                   {p.title}
                 </Link>
               ))}
@@ -172,7 +173,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="/donate"
+            href={`/${locale}/donate`}
             className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
           >
             Donate Now

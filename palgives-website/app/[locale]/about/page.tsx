@@ -87,7 +87,7 @@ export default function TeamPage() {
       image: "/images/teamMembers/Naji.jpeg"
     },
     {
-      id: 14,
+      id: 13,
       name: "Mr. Khalil Basil Radwan",
       role: "Administrative Board Member",
       description: "Holds a B.A. in Business Administration and contributes to strategic planning, administrative operations, and organizational development.",
