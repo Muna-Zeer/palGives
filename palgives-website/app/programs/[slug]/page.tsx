@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
-import YouthDevelopment from "@/app/[locale]/programs/YouthDevelopment";
-import EducationProgram from "@/app/[locale]/programs/EducationProgram";
-import WomensEmpowerment from "@/app/[locale]/programs/WomensEmpowerment";
-import MentalHealthFamilySupport from "@/app/[locale]/programs/MentalHealthFamilySupport";
-import ChildPreventiveHealthProgram from "@/app/[locale]/programs/ChildPreventiveHealthProgram";
+import YouthDevelopment from "@/app/programs/YouthDevelopment";
+import EducationProgram from "@/app/programs/EducationProgram";
+import WomensEmpowerment from "@/app/programs/WomensEmpowerment";
+import MentalHealthFamilySupport from "@/app/programs/MentalHealthFamilySupport";
+import ChildPreventiveHealthProgram from "@/app/programs/ChildPreventiveHealthProgram";
 const programComponents: Record<string, ComponentType> = {
   "youth-development-entrepreneurship": YouthDevelopment,
   "education-program": EducationProgram,

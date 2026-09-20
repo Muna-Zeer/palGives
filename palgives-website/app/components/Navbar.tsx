@@ -8,14 +8,13 @@ import { programs } from '../data/programs';
 import { VOLUNTEER_FORM_URL } from "../constants";
 import SearchBar from './SearchBar';
 import InPageSearch from './SearchBar';
-import { useLocale, useTranslations } from 'next-intl';
-import LanguageSelector from './LanguageSelector';
+import AutoTranslator from './AutoTranslator';
+
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);
   const [activeProgram, setActiveProgram] = useState(programs[0]);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-   const locale = useLocale();
-   const t = useTranslations('Navbar');
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,29 +24,29 @@ export default function Navbar() {
           <nav className="flex items-center space-x-1 gap-6 md:gap-8 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
           >
             <Link
-              href={`/${locale}`}
+              href="/"
               className="px-3 py-2 text-sm uppercase tracking-wider font-bold text-black bg-[#F3D03E] rounded transition-colors"
             >
-              {t('home')}
+              Home
             </Link>
             
             <Link
-              href={`/${locale}/about`}
+              href="/about"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider"
             >
-              {t('about')}
+              About Us
             </Link>
 
 
             {/* Donate Dropdown / Link */}
             <div className="relative group">
               <Link
-                href={`/${locale}/donate`}
+                href="/donate"
                 className="flex items-center pg-4 space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                <span>{t('donate')}</span>
+                <span>Donate Now</span>
               </Link>
             </div>
 
@@ -62,7 +61,7 @@ export default function Navbar() {
                 onClick={() => setIsProgramOpen((prev) => !prev)}
                 className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                {t('programs')}
+                Programs
               </button>
 
 
@@ -77,7 +76,7 @@ export default function Navbar() {
                     {programs.map((item) => (
                       <Link
                         key={item.slug}
-                        href={`/${locale}/programs/${item.slug}`}
+                        href={`/programs/${item.slug}`}
                         onClick={() => setIsProgramOpen(false)}
                         className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                       >
@@ -97,10 +96,10 @@ export default function Navbar() {
             {/* Contact Us Dropdown */}
             <div className="relative group">
               <Link
-                href={`/${locale}/contact`}
+                href="/contact"
                 className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
               >
-                <span>{t('contact')}</span>
+                <span>Contact Us</span>
               </Link>
 
             </div>
@@ -108,17 +107,17 @@ export default function Navbar() {
               href={VOLUNTEER_FORM_URL}
               className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
             >
-              {t('volunteer')}
+              Volunteer
             </Link>
           </nav>
 
         <div className ="flex items-center gap-4 ">
           <InPageSearch />
         </div>
-        <LanguageSelector />
+        <AutoTranslator />
           {/* Logo Brand (Right Side matching original design) */}
           <div className="flex items-center space-x-3">
-            <Link href={`/${locale}`} className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <span className="text-2xl font-black text-slate-900 tracking-tight">
                 Pal<span className="text-amber-500">Gives</span>
               </span>
@@ -158,14 +157,14 @@ export default function Navbar() {
       {/* Mobile Drawer Navigation */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3">
-          <Link href={`/${locale}`} className="block text-slate-800 font-semibold py-2">Home</Link>
-          <Link href={`/${locale}/about`} className="block text-slate-800 font-semibold py-2">About Us</Link>
+          <Link href="/" className="block text-slate-800 font-semibold py-2">Home</Link>
+          <Link href="/about" className="block text-slate-800 font-semibold py-2">About Us</Link>
 
           <div className="py-2">
             <p className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-2">Our Programs</p>
             <div className="pl-3 space-y-2 border-l-2 border-amber-400">
               {programs.map((p) => (
-                <Link key={p.slug} href={`/${locale}/programs/${p.slug}`} className="block text-sm text-slate-600 hover:text-amber-600">
+                <Link key={p.slug} href={`/programs/${p.slug}`} className="block text-sm text-slate-600 hover:text-amber-600">
                   {p.title}
                 </Link>
               ))}
@@ -173,7 +172,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href={`/${locale}/donate`}
+            href="/donate"
             className="flex items-center space-x-1 text-slate-700 hover:text-[#F3D03E] transition-colors text-sm uppercase tracking-wider font-semibold"
           >
             Donate Now
