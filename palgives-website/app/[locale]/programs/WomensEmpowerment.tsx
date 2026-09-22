@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import T from '../../components/T';
 
 export default function WomensEmpowerment() {
   return (
@@ -10,13 +11,13 @@ export default function WomensEmpowerment() {
       <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            Impact Program
+            <T>Impact Program</T>
           </span>
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            WOMEN&apos;S EMPOWERMENT
+            <T>WOMEN&apos;S EMPOWERMENT</T>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Strengthening the personal, professional, and social capacities of Palestinian women to foster economic independence and leadership.
+            <T>Strengthening the personal, professional, and social capacities of Palestinian women to foster economic independence and leadership.</T>
           </p>
         </div>
       </section>
@@ -25,13 +26,13 @@ export default function WomensEmpowerment() {
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-            Overview
+            <T>Overview</T>
           </h2>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Building Leadership & Resilience
+            <T>Building Leadership & Resilience</T>
           </h3>
           <p className="text-slate-600 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
-            The <strong className="text-slate-900">Women&apos;s Empowerment</strong> program at <strong className="text-slate-900">PalGives</strong> aims to support women in Palestine by enhancing their personal, professional, and social capacities, enabling them to actively participate in economic and social life.
+            <T>The</T> <strong className="text-slate-900"><T>Women&apos;s Empowerment</T></strong> <T>program at</T> <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> <T>aims to support women in Palestine by enhancing their personal, professional, and social capacities, enabling them to actively participate in economic and social life.</T>
           </p>
         </div>
       </section>
@@ -54,13 +55,13 @@ export default function WomensEmpowerment() {
 
             <div className="space-y-6">
               <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-                PROGRAM GOALS
+                <T>PROGRAM GOALS</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-700 font-medium list-disc list-inside">
-                <li>Boost self-confidence and independence</li>
-                <li>Develop leadership and management skills</li>
-                <li>Support women in entrepreneurship and freelancing</li>
-                <li>Promote community engagement and active citizenship</li>
+                <li><T>Boost self-confidence and independence</T></li>
+                <li><T>Develop leadership and management skills</T></li>
+                <li><T>Support women in entrepreneurship and freelancing</T></li>
+                <li><T>Promote community engagement and active citizenship</T></li>
               </ul>
             </div>
           </div>
@@ -78,13 +79,13 @@ export default function WomensEmpowerment() {
 
             <div className="space-y-6 order-1 md:order-2">
               <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-                EXPECTED OUTCOMES
+                <T>EXPECTED OUTCOMES</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-700 font-medium list-disc list-inside">
-                <li>Increased opportunities for women to participate in the workforce</li>
-                <li>Strengthened capacity to lead projects and initiatives</li>
-                <li>Building a supportive and connected women&apos;s community</li>
-                <li>Empowering women to become active contributors to economic and social development</li>
+                <li><T>Increased opportunities for women to participate in the workforce</T></li>
+                <li><T>Strengthened capacity to lead projects and initiatives</T></li>
+                <li><T>Building a supportive and connected women&apos;s community</T></li>
+                <li><T>Empowering women to become active contributors to economic and social development</T></li>
               </ul>
             </div>
           </div>
@@ -100,44 +101,44 @@ export default function WomensEmpowerment() {
           <div className="space-y-8">
             <div>
               <span className="text-xs font-bold tracking-widest uppercase text-slate-800">
-                Core Strategy
+                <T>Core Strategy</T>
               </span>
               <h2 className="text-2xl sm:text-4xl font-black tracking-tight mt-1">
-                PROGRAM PILLARS
+                <T>PROGRAM PILLARS</T>
               </h2>
             </div>
 
             <div className="space-y-4">
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  1. Professional Training & Entrepreneurship
+                  <T>1. Professional Training & Entrepreneurship</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>Workshops on establishing small and medium enterprises</li>
-                  <li>Business management and financial planning</li>
-                  <li>Digital marketing and brand building</li>
+                  <li><T>Workshops on establishing small and medium enterprises</T></li>
+                  <li><T>Business management and financial planning</T></li>
+                  <li><T>Digital marketing and brand building</T></li>
                 </ul>
               </div>
 
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  2. Personal & Leadership Skills Development
+                  <T>2. Personal & Leadership Skills Development</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>Effective communication skills</li>
-                  <li>Critical thinking and problem-solving</li>
-                  <li>Leadership and time management</li>
+                  <li><T>Effective communication skills</T></li>
+                  <li><T>Critical thinking and problem-solving</T></li>
+                  <li><T>Leadership and time management</T></li>
                 </ul>
               </div>
 
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  3. Mentorship & Support
+                  <T>3. Mentorship & Support</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>Individual guidance sessions with experts</li>
-                  <li>Building a support network of women leaders</li>
-                  <li>Ongoing follow-up for projects and initiatives</li>
+                  <li><T>Individual guidance sessions with experts</T></li>
+                  <li><T>Building a support network of women leaders</T></li>
+                  <li><T>Ongoing follow-up for projects and initiatives</T></li>
                 </ul>
               </div>
             </div>
@@ -170,17 +171,17 @@ export default function WomensEmpowerment() {
       <section className="py-20 sm:py-24 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            Support Women-Led Initiatives in Palestine
+            <T>Support Women-Led Initiatives in Palestine</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            Your support helps fund business grants, mentorship programs, and vocational workshops for ambitious women.
+            <T>Your support helps fund business grants, mentorship programs, and vocational workshops for ambitious women.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
-              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md"
+              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              Empower Women Today
+              <T>Empower Women Today</T>
             </a>
           </div>
         </div>

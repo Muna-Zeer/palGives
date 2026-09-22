@@ -1,22 +1,15 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./components/Navbar";
+import { LanguageProvider } from '@/context/LanguageContext';
+import './globals.css';
+import Navbar from './components/Navbar';
 
-export const metadata: Metadata = {
-  title: "PalGives",
-  description: "Empowering youth in Palestine",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <LanguageProvider>
+          <Navbar />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

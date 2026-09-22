@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import T from '../../components/T';
 
 export default function YouthDevelopment() {
     return (
@@ -10,13 +11,13 @@ export default function YouthDevelopment() {
             <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12">
                 <div className="max-w-5xl mx-auto text-center space-y-4">
                     <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-                        Impact Program
+                        <T>Impact Program</T>
                     </span>
                     <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-                        Youth Development & Entrepreneurship
+                        <T>Youth Development & Entrepreneurship</T>
                     </h1>
                     <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Empowering Palestine&apos;s youth with essential business skills, leadership training, mentorship, and career-building networks to shape a sustainable future.
+                        <T>Empowering Palestine&apos;s youth with essential business skills, leadership training, mentorship, and career-building networks to shape a sustainable future.</T>
                     </p>
                 </div>
             </section>
@@ -25,16 +26,16 @@ export default function YouthDevelopment() {
             <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
                 <div className="max-w-4xl mx-auto text-center space-y-4">
                     <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-                        Overview
+                        <T>Overview</T>
                     </h2>
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-                        ABOUT THE PROGRAM
+                        <T>ABOUT THE PROGRAM</T>
                     </h3>
                     <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-                        At PalGives, we believe that youth are the driving force of sustainable development and social transformation. Our Youth Development & Entrepreneurship Program is designed to equip young people with the skills, confidence, and opportunities they need to become economically independent and socially responsible leaders.
+                        <T>At</T> <strong className="text-slate-900 notranslate" translate="no">PalGives</strong>, <T>we believe that youth are the driving force of sustainable development and social transformation. Our Youth Development & Entrepreneurship Program is designed to equip young people with the skills, confidence, and opportunities they need to become economically independent and socially responsible leaders.</T>
                     </p>
                     <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-                        Through structured training, mentorship, and practical engagement, we support youth in transforming their potential into tangible impact within their communities.
+                        <T>Through structured training, mentorship, and practical engagement, we support youth in transforming their potential into tangible impact within their communities.</T>
                     </p>
                 </div>
             </section>
@@ -54,16 +55,16 @@ export default function YouthDevelopment() {
 
                     <div className="space-y-6">
                         <span className="text-xs font-bold tracking-widest uppercase text-slate-800">
-                            The Context
+                            <T>The Context</T>
                         </span>
                         <h2 className="text-2xl sm:text-3xl font-black">
-                            THE CHALLENGE
+                            <T>THE CHALLENGE</T>
                         </h2>
                         <p className="leading-relaxed font-medium text-slate-800">
-                            Young people in Palestine face significant challenges, including high unemployment rates, limited access to economic opportunities, and restricted exposure to entrepreneurial ecosystems. Many lack access to structured mentorship, professional networks, and startup support systems.
+                            <T>Young people in Palestine face significant challenges, including high unemployment rates, limited access to economic opportunities, and restricted exposure to entrepreneurial ecosystems. Many lack access to structured mentorship, professional networks, and startup support systems.</T>
                         </p>
                         <p className="leading-relaxed font-medium text-slate-800">
-                            PalGives addresses these gaps through an integrated, youth-centered development model built for tangible long-term impact.
+                            <span className="notranslate" translate="no">PalGives</span> <T>addresses these gaps through an integrated, youth-centered development model built for tangible long-term impact.</T>
                         </p>
                     </div>
                 </div>
@@ -75,37 +76,37 @@ export default function YouthDevelopment() {
                     <div className="space-y-6 order-2 md:order-1">
                         <div>
                             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
-                                Strategy
+                                <T>Strategy</T>
                             </span>
                             <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
-                                OUR APPROACH
+                                <T>OUR APPROACH</T>
                             </h2>
                             <p className="text-slate-600 mt-2">
-                                Our program combines practical learning with real-world application:
+                                <T>Our program combines practical learning with real-world application:</T>
                             </p>
                         </div>
 
                         <div className="space-y-4">
                             <div className="p-5 bg-slate-50 border-l-4 border-[#F3D03E] rounded-r-lg shadow-sm">
                                 <h3 className="font-bold text-slate-900 text-base">
-                                    1. Leadership & Life Skills Development
+                                    <T>1. Leadership & Life Skills Development</T>
                                 </h3>
                                 <ul className="mt-2 space-y-1 text-sm text-slate-600 list-disc list-inside">
-                                    <li>Communication and public speaking</li>
-                                    <li>Critical thinking and problem-solving</li>
-                                    <li>Teamwork and collaboration</li>
-                                    <li>Self-confidence and personal development</li>
+                                    <li><T>Communication and public speaking</T></li>
+                                    <li><T>Critical thinking and problem-solving</T></li>
+                                    <li><T>Teamwork and collaboration</T></li>
+                                    <li><T>Self-confidence and personal development</T></li>
                                 </ul>
                             </div>
 
                             <div className="p-5 bg-slate-50 border-l-4 border-[#F3D03E] rounded-r-lg shadow-sm">
                                 <h3 className="font-bold text-slate-900 text-base">
-                                    2. Entrepreneurship & Innovation
+                                    <T>2. Entrepreneurship & Innovation</T>
                                 </h3>
                                 <ul className="mt-2 space-y-1 text-sm text-slate-600 list-disc list-inside">
-                                    <li>Business model generation & market testing</li>
-                                    <li>Financial literacy and budgeting</li>
-                                    <li>Pitching and fundraising fundamentals</li>
+                                    <li><T>Business model generation & market testing</T></li>
+                                    <li><T>Financial literacy and budgeting</T></li>
+                                    <li><T>Pitching and fundraising fundamentals</T></li>
                                 </ul>
                             </div>
                         </div>
@@ -137,24 +138,24 @@ export default function YouthDevelopment() {
                     <div className="space-y-4">
                         <div className="p-5 bg-white border-l-4 border-[#F3D03E] rounded-r-lg shadow-sm">
                             <h3 className="font-bold text-slate-900 text-base">
-                                3. Digital & Employability Skills
+                                <T>3. Digital & Employability Skills</T>
                             </h3>
                             <ul className="mt-2 space-y-1 text-sm text-slate-600 list-disc list-inside">
-                                <li>Digital literacy and online tools</li>
-                                <li>CV writing and interview preparation</li>
-                                <li>Freelancing and remote work readiness</li>
+                                <li><T>Digital literacy and online tools</T></li>
+                                <li><T>CV writing and interview preparation</T></li>
+                                <li><T>Freelancing and remote work readiness</T></li>
                             </ul>
                         </div>
 
                         <div className="p-5 bg-white border-l-4 border-[#F3D03E] rounded-r-lg shadow-sm">
                             <h3 className="font-bold text-slate-900 text-base">
-                                4. Mentorship & Startup Support
+                                <T>4. Mentorship & Startup Support</T>
                             </h3>
                             <ul className="mt-2 space-y-1 text-sm text-slate-600 list-disc list-inside">
-                                <li>Individual coaching sessions</li>
-                                <li>Expert-led workshops</li>
-                                <li>Networking opportunities</li>
-                                <li>Support for youth-led initiatives</li>
+                                <li><T>Individual coaching sessions</T></li>
+                                <li><T>Expert-led workshops</T></li>
+                                <li><T>Networking opportunities</T></li>
+                                <li><T>Support for youth-led initiatives</T></li>
                             </ul>
                         </div>
                     </div>
@@ -178,17 +179,17 @@ export default function YouthDevelopment() {
 
                         <div className="space-y-6">
                             <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                                EXPECTED OUTCOMES
+                                <T>EXPECTED OUTCOMES</T>
                             </h2>
                             <p className="text-base font-bold text-slate-800">
-                                Through this program, PalGives aims to:
+                                <T>Through this program,</T> <span className="notranslate" translate="no">PalGives</span> <T>aims to:</T>
                             </p>
                             <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                                <li>Increase youth employability and job readiness</li>
-                                <li>Support the creation of youth-led micro and small enterprises</li>
-                                <li>Strengthen leadership and civic engagement skills</li>
-                                <li>Foster economic resilience among vulnerable youth</li>
-                                <li>Build a sustainable network of young changemakers</li>
+                                <li><T>Increase youth employability and job readiness</T></li>
+                                <li><T>Support the creation of youth-led micro and small enterprises</T></li>
+                                <li><T>Strengthen leadership and civic engagement skills</T></li>
+                                <li><T>Foster economic resilience among vulnerable youth</T></li>
+                                <li><T>Build a sustainable network of young changemakers</T></li>
                             </ul>
                         </div>
                     </div>
@@ -206,16 +207,16 @@ export default function YouthDevelopment() {
 
                         <div className="space-y-6 order-1 md:order-2">
                             <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                                IMPACT VISION
+                                <T>IMPACT VISION</T>
                             </h2>
                             <p className="text-base font-bold text-slate-800">
-                                By investing in youth capacity and entrepreneurship, PalGives contributes to:
+                                <T>By investing in youth capacity and entrepreneurship,</T> <span className="notranslate" translate="no">PalGives</span> <T>contributes to:</T>
                             </p>
                             <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                                <li>Reducing youth unemployment</li>
-                                <li>Strengthening local economic participation</li>
-                                <li>Promoting innovation and self-reliance</li>
-                                <li>Advancing inclusive and sustainable community development</li>
+                                <li><T>Reducing youth unemployment</T></li>
+                                <li><T>Strengthening local economic participation</T></li>
+                                <li><T>Promoting innovation and self-reliance</T></li>
+                                <li><T>Advancing inclusive and sustainable community development</T></li>
                             </ul>
                         </div>
                     </div>
@@ -227,17 +228,17 @@ export default function YouthDevelopment() {
             <section className="py-20 sm:py-24 px-6 bg-slate-900 text-white text-center">
                 <div className="max-w-3xl mx-auto space-y-6">
                     <h2 className="text-2xl sm:text-3xl font-black">
-                        Support Palestine&apos;s Next Generation of Leaders
+                        <T>Support Palestine&apos;s Next Generation of Leaders</T>
                     </h2>
                     <p className="text-slate-300 text-sm sm:text-base">
-                        Your support provides direct funding for training programs, seed grants, and mentorship for young entrepreneurs.
+                        <T>Your support provides direct funding for training programs, seed grants, and mentorship for young entrepreneurs.</T>
                     </p>
                     <div className="pt-2">
                         <a
                             href="/donate"
-                            className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md"
+                            className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
                         >
-                            Support This Program
+                            <T>Support This Program</T>
                         </a>
                     </div>
                 </div>

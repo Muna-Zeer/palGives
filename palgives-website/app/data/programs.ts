@@ -1,4 +1,5 @@
 import { Program } from '../types/program';
+import T from '../components/T';
 
 export const programs: Program[] = [
   {

@@ -1,4 +1,16 @@
+'use client';
+
 import Image from 'next/image';
+import T from '../../components/T';
+
+interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  description: string;
+  image: string;
+}
+
 export default function TeamPage() {
   const teamMembers: TeamMember[] = [
     {
@@ -64,7 +76,6 @@ export default function TeamPage() {
       description: "Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and enhance their role in the community.",
       image: "/images/teamMembers/baher.png"
     },
-
     {
       id: 10,
       name: "Mr. Imad Shakhtour",
@@ -100,18 +111,17 @@ export default function TeamPage() {
       description: "Holds a Master's degree in Project Management (MICAD) and a B.Sc. in Agricultural Engineering. Coordinates and monitors PalGives projects, aligning teams, partners, and community programs for maximum impact.",
       image: "/images/teamMembers/Reem.jpeg"
     }
-
-
   ];
+
   return (
     <div className="w-full min-h-screen bg-white text-gray-800">
 
       {/* Hero Header */}
       <section className="relative w-full h-[50vh] min-h-[350px] flex flex-col justify-center items-center text-center bg-slate-200 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/team-hero.jpg')" }}>
-        <div className="absolute inset-0 bg-gray/50" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-black tracking-widest uppercase text-black">
-            OUR TEAM
+          <h1 className="text-4xl md:text-6xl font-black tracking-widest uppercase text-white">
+            <T>OUR TEAM</T>
           </h1>
           <div className="w-32 md:w-56 h-1 bg-yellow-400 my-4 mx-auto rounded-full" />
         </div>
@@ -121,10 +131,10 @@ export default function TeamPage() {
       <section className="w-full bg-yellow-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-4 text-gray-900 font-medium text-sm md:text-base leading-relaxed">
           <p>
-            Our team at <span className="italic font-semibold">PalGives</span> is made up of passionate and committed individuals dedicated to empowering children, youth, and women in Palestine.
+            <T>Our team at</T> <span className="italic font-semibold notranslate" translate="no">PalGives</span> <T>is made up of passionate and committed individuals dedicated to empowering children, youth, and women in Palestine.</T>
           </p>
           <p>
-            We welcome team members who are curious, empathetic, and driven by integrity, with a genuine desire to make a positive impact in the community every single day. At <span className="italic font-semibold">PalGives</span>, we strive to be humble, hardworking, and—above all—collaborative, working together to create opportunities and meaningful change.
+            <T>We welcome team members who are curious, empathetic, and driven by integrity, with a genuine desire to make a positive impact in the community every single day. At</T> <span className="italic font-semibold notranslate" translate="no">PalGives</span>, <T>we strive to be humble, hardworking, and—above all—collaborative, working together to create opportunities and meaningful change.</T>
           </p>
         </div>
       </section>
@@ -146,14 +156,19 @@ export default function TeamPage() {
                 />
               </div>
 
-              {/* Title & Name */}
-              <h3 className="text-base font-bold text-gray-900 mb-2">
+              {/* Name (Protected from bad translations) */}
+              <h3 className="text-base font-bold text-gray-900 mb-1 notranslate" translate="no">
                 {member.name}
               </h3>
 
+              {/* Role */}
+              <p className="text-xs font-semibold text-amber-600 mb-2">
+                <T>{member.role}</T>
+              </p>
+
               {/* Bio / Description */}
               <p className="text-xs text-gray-600 leading-relaxed">
-                {member.description}
+                <T>{member.description}</T>
               </p>
 
             </div>

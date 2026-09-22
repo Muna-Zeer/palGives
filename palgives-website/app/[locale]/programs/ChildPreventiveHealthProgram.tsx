@@ -1,22 +1,23 @@
 'use client';
 
 import Image from 'next/image';
+import T from '../../components/T';
 
-export default function MentalHealthFamilySupport() {
+export default function ChildPreventiveHealthProgram() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
-
+      
       {/* 1. HERO SECTION */}
-      <section className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/')" }}>
+      <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            Impact Program
+            <T>Impact Program</T>
           </span>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            MENTAL HEALTH & FAMILY SUPPORT
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight uppercase">
+            <T>Child Preventive Health Program</T>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Promoting emotional well-being, strengthening family bonds, and providing essential psychosocial care for children, youth, and parents.
+            <T>Ensuring early health screenings, essential nutritional guidance, and preventive care to build a healthier future for Palestinian children.</T>
           </p>
         </div>
       </section>
@@ -25,13 +26,13 @@ export default function MentalHealthFamilySupport() {
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-            Overview
+            <T>Overview</T>
           </h2>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Nurturing Resilience & Well-being
+            <T>Protecting Child Health & Development</T>
           </h3>
           <p className="text-slate-600 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
-            The <strong className="text-slate-900">Mental Health & Family Support</strong> program at <strong className="text-slate-900">PalGives</strong> aims to promote the mental well-being of children, youth, and family members, providing the necessary support to strengthen family bonds and empower families to face daily challenges in a healthy and sustainable way.
+            <T>The</T> <strong className="text-slate-900"><T>Child Preventive Health Program</T></strong> <T>at</T> <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> <T>focuses on proactive medical support, health education, and early interventions. By partnering with medical professionals and local communities, we safeguard children against preventable illnesses and encourage lifelong wellness habits.</T>
           </p>
         </div>
       </section>
@@ -39,13 +40,13 @@ export default function MentalHealthFamilySupport() {
       {/* 3. PROGRAM GOALS & EXPECTED OUTCOMES (YELLOW BANNER) */}
       <section className="bg-[#F3D03E] py-20 sm:py-28 px-6 sm:px-12 text-slate-900">
         <div className="max-w-5xl mx-auto space-y-20 sm:space-y-24">
-
+          
           {/* Program Goals Block */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/programs/Health.jpg"
-                alt="Family therapy session"
+                src="/images/programs/child1.jpg" 
+                alt="Medical health screening for children"
                 fill
                 className="object-cover"
                 priority
@@ -53,14 +54,14 @@ export default function MentalHealthFamilySupport() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                PROGRAM GOALS
+              <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
+                <T>Program Goals</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>Enhance the mental health of children and youth</li>
-                <li>Provide psychosocial and social support to families</li>
-                <li>Strengthen skills for coping with daily pressures and challenges</li>
-                <li>Build a healthy and stable family environment</li>
+                <li><T>Provide early developmental and health screenings for young children</T></li>
+                <li><T>Offer nutritional assessments and essential supplement guidance</T></li>
+                <li><T>Educate families on hygiene, preventive care, and disease prevention</T></li>
+                <li><T>Reduce health disparities in under-resourced communities</T></li>
               </ul>
             </div>
           </div>
@@ -69,22 +70,22 @@ export default function MentalHealthFamilySupport() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center pt-16 border-t border-slate-900/20">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white order-2 md:order-1">
               <Image
-                src="/images/programs/Health2.jpg"
-                alt="Outdoor community activity"
+                src="/images/programs/child7.jpg" 
+                alt="Nutritional and health workshop"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="space-y-6 order-1 md:order-2">
-              <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                EXPECTED OUTCOMES
+              <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
+                <T>Expected Outcomes</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>Improved mental health for children and youth</li>
-                <li>Strengthened family bonds and effective communication</li>
-                <li>Increased family capacity to manage pressures and challenges</li>
-                <li>Establishing a supportive and stable family environment that fosters children&apos;s and youth&apos;s growth</li>
+                <li><T>Increased detection rates for early childhood health conditions</T></li>
+                <li><T>Enhanced parental awareness surrounding pediatric hygiene and nutrition</T></li>
+                <li><T>Stronger community-wide commitment to preventive healthcare practices</T></li>
+                <li><T>Long-term reduction in avoidable childhood illness and absenteeism</T></li>
               </ul>
             </div>
           </div>
@@ -95,37 +96,37 @@ export default function MentalHealthFamilySupport() {
       {/* 4. PROGRAM PILLARS */}
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto space-y-12">
-
+          
           <div className="text-center space-y-3">
             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
-              Core Strategy
+              <T>Core Strategy</T>
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              PROGRAM PILLARS
+            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
+              <T>Program Pillars</T>
             </h2>
           </div>
 
           {/* 3 Pillar Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
+            
             {/* Pillar 1 */}
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/Health3.jpg"
-                  alt="Psychosocial & Social Support"
+                  src="/images/programs/child8.jpg" 
+                  alt="Early Medical Screening"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  Psychosocial & Social Support
+                  <T>1. Early Screenings & Diagnostics</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>Individual and group therapy sessions</li>
-                  <li>Programs to boost self-confidence and social adaptation</li>
-                  <li>Workshops on managing emotions and handling stress</li>
+                  <li><T>Routine vision, dental, and general physical checkups</T></li>
+                  <li><T>Early detection of developmental delays</T></li>
+                  <li><T>Referral systems for specialized pediatric care</T></li>
                 </ul>
               </div>
             </div>
@@ -134,20 +135,20 @@ export default function MentalHealthFamilySupport() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/Health4.jpg"
-                  alt="Family Support"
+                  src="/images/programs/child-health-8.jpg"
+                  alt="Nutritional Support"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  Family Support
+                  <T>2. Nutritional Support & Wellness</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>Family guidance and counseling sessions</li>
-                  <li>Promoting healthy communication and family relationships</li>
-                  <li>Programs to help parents support their children academically and socially</li>
+                  <li><T>Customized meal planning and dietary counseling</T></li>
+                  <li><T>Distribution of essential vitamins and micronutrients</T></li>
+                  <li><T>Monitoring growth milestones and physical health</T></li>
                 </ul>
               </div>
             </div>
@@ -156,20 +157,20 @@ export default function MentalHealthFamilySupport() {
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
               <div className="relative h-60 w-full">
                 <Image
-                  src="/images/programs/women-health-6.jpg"
-                  alt="Training & Life Skills"
+                  src="/images/programs/women-health-9.png" 
+                  alt="Health Education"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  Training & Life Skills
+                  <T>3. Family Hygiene & Health Education</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>Programs to develop problem-solving and decision-making skills</li>
-                  <li>Enhancing communication skills among family members</li>
-                  <li>Workshops on time management and organizing family life</li>
+                  <li><T>Interactive workshops on personal hygiene habits</T></li>
+                  <li><T>Parental guidance for managing common childhood illnesses</T></li>
+                  <li><T>Community-driven sanitation and health awareness campaigns</T></li>
                 </ul>
               </div>
             </div>
@@ -183,21 +184,26 @@ export default function MentalHealthFamilySupport() {
       <section className="py-20 sm:py-24 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            Support Family Well-being in Palestine
+            <T>Protect Children`&apos;`s Health in Palestine</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            Your support provides professional psychological counseling, family workshops, and youth support circles to build resilient communities.
+            <T>Your support finances mobile health clinics, screening kits, and essential nutrition packs for vulnerable children.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
-              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md"
+              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              Support Mental Health Programs
+              <T>Support Child Health Today</T>
             </a>
           </div>
         </div>
       </section>
+
+      {/* 6. FOOTER COPYRIGHT */}
+      <footer className="py-8 bg-slate-100 border-t border-slate-200 text-center text-xs text-slate-500 font-medium">
+        <T>Youth Empowerment Initiative. All Rights Reserved. -2024–2026 PalGives ©</T>
+      </footer>
 
     </div>
   );

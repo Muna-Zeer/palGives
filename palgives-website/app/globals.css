@@ -5,66 +5,22 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* 1. Hide Google Translate iframe top banner */
-.goog-te-banner-frame,
-iframe.goog-te-banner-frame,
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
 
-/* 2. Reset top body offset forced by Google Translate */
-body {
-  top: 0px !important;
-  position: static !important;
-}
-
-/* 3. Hide Google widget, gadget, and attribution text */
-#google_translate_element,
-.goog-te-gadget,
-.goog-te-combo {
-  display: none !important;
-}
-
-/* 4. Hide hover tooltips over translated text */
-#goog-gt-tt,
-.goog-te-balloon-frame {
-  display: none !important;
-}
-
-.goog-text-highlight {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-/* إخفاء شريط جوجل العلوي */
+/* Allow the Google Translate top bar to display nicely without breaking layout */
 .goog-te-banner-frame {
-  display: none !important;
-}
-
-body {
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 999999 !important;
 }
 
+/* Style the dropdown menu in your navbar */
 .goog-te-combo {
   padding: 6px 12px;
   border-radius: 6px;
@@ -73,4 +29,16 @@ body {
   font-size: 14px;
   outline: none;
   cursor: pointer;
+  color: #171717;
+}
+
+/* Hide hover tooltips over translated text */
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }

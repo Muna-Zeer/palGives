@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import T from '../../components/T';
 
 export default function EducationProgram() {
   return (
@@ -10,13 +11,13 @@ export default function EducationProgram() {
       <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            Impact Program
+            <T>Impact Program</T>
           </span>
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            EDUCATION PROGRAM
+            <T>EDUCATION PROGRAM</T>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Unlocking potential and empowering youth through accessible, high-quality education and skill-building initiatives.
+            <T>Unlocking potential and empowering youth through accessible, high-quality education and skill-building initiatives.</T>
           </p>
         </div>
       </section>
@@ -28,34 +29,34 @@ export default function EducationProgram() {
           {/* Overview text */}
           <div className="text-center space-y-4">
             <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-              Overview
+              <T>Overview</T>
             </h2>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Unlocking Potential, Empowering Youth
+              <T>Unlocking Potential, Empowering Youth</T>
             </h3>
             <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-              At <span className="font-bold text-slate-900">PalGives</span>, we believe that every child and young person deserves access to quality education that inspires curiosity, creativity, and confidence. Our <span className="font-bold text-slate-900">Education Program</span> equips learners with essential academic, digital, and life skills—preparing them to succeed in school, work, and life.
+              <T>At</T> <span className="font-bold text-slate-900 notranslate" translate="no">PalGives</span><T>, we believe that every child and young person deserves access to quality education that inspires curiosity, creativity, and confidence. Our</T> <span className="font-bold text-slate-900"><T>Education Program</T></span> <T>equips learners with essential academic, digital, and life skills—preparing them to succeed in school, work, and life.</T>
             </p>
           </div>
 
           {/* Why It Matters */}
           <div className="p-8 bg-slate-50 border-l-4 border-[#F3D03E] rounded-r-2xl shadow-sm space-y-6">
             <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-              WHY IT MATTERS
+              <T>WHY IT MATTERS</T>
             </h3>
             <ul className="space-y-3 text-slate-700 text-base font-medium list-disc list-inside">
               <li>
-                <strong className="text-slate-900">85%</strong> of our participants report improved academic performance within one year.
+                <strong className="text-slate-900">85%</strong> <T>of our participants report improved academic performance within one year.</T>
               </li>
               <li>
-                <strong className="text-slate-900">75%</strong> gain stronger digital and STEAM skills.
+                <strong className="text-slate-900">75%</strong> <T>gain stronger digital and STEAM skills.</T>
               </li>
               <li>
-                Education is the key to breaking cycles of poverty and unemployment.
+                <T>Education is the key to breaking cycles of poverty and unemployment.</T>
               </li>
             </ul>
             <p className="text-sm font-semibold text-amber-800 bg-amber-50 p-3 rounded-lg border border-amber-200 inline-block">
-              We focus on hands-on learning, mentorship, and community support to ensure every student succeeds.
+              <T>We focus on hands-on learning, mentorship, and community support to ensure every student succeeds.</T>
             </p>
           </div>
 
@@ -80,24 +81,24 @@ export default function EducationProgram() {
 
             <div className="space-y-6">
               <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                What We Offer
+                <T>What We Offer</T>
               </h2>
               <ul className="space-y-4 text-sm sm:text-base text-slate-900 font-medium">
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">Academic Support:</strong>
-                  Tutoring in core subjects (Math, Science, Languages).
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Academic Support:</T></strong>
+                  <T>Tutoring in core subjects (Math, Science, Languages).</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">Digital & STEAM Skills:</strong>
-                  Coding, IT literacy, and creative problem-solving.
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Digital & STEAM Skills:</T></strong>
+                  <T>Coding, IT literacy, and creative problem-solving.</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">Life Skills & Leadership:</strong>
-                  Communication, teamwork, and critical thinking.
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Life Skills & Leadership:</T></strong>
+                  <T>Communication, teamwork, and critical thinking.</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">Mentorship & Guidance:</strong>
-                  Personalized support and career exploration.
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Mentorship & Guidance:</T></strong>
+                  <T>Personalized support and career exploration.</T>
                 </li>
               </ul>
             </div>
@@ -116,16 +117,16 @@ export default function EducationProgram() {
 
             <div className="space-y-6 order-1 md:order-2">
               <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                Impact
+                <T>Impact</T>
               </h2>
               <p className="text-base font-bold text-slate-800">
-                Through this program, PalGives helps youth:
+                <T>Through this program, PalGives helps youth:</T>
               </p>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>Improve academic outcomes and confidence.</li>
-                <li>Develop critical thinking, digital, and leadership skills.</li>
-                <li>Access future educational and career opportunities.</li>
-                <li>Become active contributors to their communities.</li>
+                <li><T>Improve academic outcomes and confidence.</T></li>
+                <li><T>Develop critical thinking, digital, and leadership skills.</T></li>
+                <li><T>Access future educational and career opportunities.</T></li>
+                <li><T>Become active contributors to their communities.</T></li>
               </ul>
             </div>
           </div>
@@ -148,20 +149,20 @@ export default function EducationProgram() {
 
           <div className="space-y-6">
             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
-              Get Involved
+              <T>Get Involved</T>
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-slate-900">
-              JOIN US
+              <T>JOIN US</T>
             </h2>
             <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-              <strong className="text-slate-900">Be a part of the change!</strong> Support PalGives in creating brighter futures for Palestinian youth. Your contribution empowers children to <span className="font-bold text-slate-900">learn, grow, and unlock their full potential</span>—one student at a time.
+              <strong className="text-slate-900"><T>Be a part of the change!</T></strong> <T>Support PalGives in creating brighter futures for Palestinian youth. Your contribution empowers children to</T> <span className="font-bold text-slate-900"><T>learn, grow, and unlock their full potential</T></span><T>—one student at a time.</T>
             </p>
             <div>
               <a
                 href="/donate"
-                className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md"
+                className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
               >
-                Support Education
+                <T>Support Education</T>
               </a>
             </div>
           </div>
@@ -173,17 +174,17 @@ export default function EducationProgram() {
       <section className="py-20 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            Invest in Education Today
+            <T>Invest in Education Today</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            Help us provide learning materials, digital devices, and skilled instructors to under-resourced communities.
+            <T>Help us provide learning materials, digital devices, and skilled instructors to under-resourced communities.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
-              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md"
+              className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              Donate Now
+              <T>Donate Now</T>
             </a>
           </div>
         </div>

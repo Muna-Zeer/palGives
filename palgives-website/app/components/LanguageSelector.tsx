@@ -1,26 +1,22 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import {useLocale} from 'next-intl';
+import {useRouter, usePathname} from '@/i18n/navigation';
 import React from 'react';
 
 export default function LanguageSelector() {
   const locale = useLocale();
-  const pathname = usePathname();
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleLanguageChange = (
     e: React.ChangeEvent<HTMLSelectElement>
   ) => {
-    const nextLocale = e.target.value;
+    const nextLocale = e.target.value as 'en' | 'ar';
 
-    const segments = pathname.split('/');
-
-    // /en/about -> /ar/about
-    // /ar/about -> /en/about
-    segments[1] = nextLocale;
-
-    router.push(segments.join('/'));
+    router.replace(pathname, {
+      locale: nextLocale
+    });
   };
 
   return (
