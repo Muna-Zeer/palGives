@@ -45,9 +45,10 @@ export default function ChildPreventiveHealthProgram() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
             <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/programs/child1.jpg" 
+                src="/images/programs/child2.jpg" 
                 alt="Medical health screening for children"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority
               />
@@ -73,6 +74,7 @@ export default function ChildPreventiveHealthProgram() {
                 src="/images/programs/child7.jpg" 
                 alt="Nutritional and health workshop"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -116,6 +118,7 @@ export default function ChildPreventiveHealthProgram() {
                   src="/images/programs/child8.jpg" 
                   alt="Early Medical Screening"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -138,6 +141,7 @@ export default function ChildPreventiveHealthProgram() {
                   src="/images/programs/child-health-8.jpg"
                   alt="Nutritional Support"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -160,6 +164,7 @@ export default function ChildPreventiveHealthProgram() {
                   src="/images/programs/women-health-9.png" 
                   alt="Health Education"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>

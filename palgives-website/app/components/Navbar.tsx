@@ -33,9 +33,10 @@ export default function Navbar() {
           {/* Logo Brand (Left Side) */}
           <div className="flex items-center space-x-3 notranslate" translate="no">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-black text-slate-900 tracking-tight">
+              <span className="hidden sm:inline text-2xl font-black text-slate-900 tracking-tight">
                 Pal<span className="text-amber-500">Gives</span>
               </span>
+
               <div className="w-9 h-9 relative">
                 <Image
                   src="/images/PalGives_logo.jpg"
@@ -56,7 +57,7 @@ export default function Navbar() {
             >
               {t.home}
             </Link>
-            
+
             <Link
               href="/about"
               className="hover:text-[#F3D03E] transition-colors"
@@ -71,51 +72,65 @@ export default function Navbar() {
               {t.donate}
             </Link>
 
-            {/* Our Programs Dynamic Mega Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsProgramOpen(true)}
-              onMouseLeave={() => setIsProgramOpen(false)}
-            >
-              <button
-                type="button"
-                onClick={() => setIsProgramOpen((prev) => !prev)}
-                className="flex items-center space-x-1 hover:text-[#F3D03E] transition-colors"
-              >
-                {t.programs}
-              </button>
+         {/* Our Programs Dynamic Dropdown */}
+<div className="relative">
+  <button
+    type="button"
+    onClick={() => setIsProgramOpen((prev) => !prev)}
+    className="flex items-center space-x-1 hover:text-[#F3D03E] transition-colors cursor-pointer font-medium focus:outline-none"
+  >
+    <span>{t.programs}</span>
+    <svg className={`w-4 h-4 transition-transform duration-200 ${isProgramOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
 
-              {isProgramOpen && (
-                <div className="absolute left-0 top-full w-[680px] bg-white rounded-xl shadow-2xl border border-slate-100 p-6 grid grid-cols-12 gap-6 z-50">
-                  <div className="col-span-12 space-y-2">
-                    <p className="text-xs font-semibold text-[#F3D03E] uppercase tracking-widest mb-2">
-                      <T>{t.impact}</T>
-                    </p>
+  {/* Dropdown Menu Container */}
+  {isProgramOpen && (
+    <div className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[720px] bg-white rounded-2xl shadow-2xl border border-slate-100 p-6 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+      
+      {/* Mega Menu Header Section */}
+      <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+        <div>
+          <p className="text-xs font-bold text-amber-500 uppercase tracking-widest">
+            <T>{t.impact || "Our Initiatives"}</T>
+          </p>
+          <h4 className="text-sm font-semibold text-slate-800">
+            <T>Explore How We Create Impact</T>
+          </h4>
+        </div>
+      </div>
 
-                    {programs.map((item) => (
-                      <Link
-                        key={item.slug}
-                        href={`/programs/${item.slug}`}
-                        onClick={() => setIsProgramOpen(false)}
-                        className="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
-                      >
-                        <div className="text-sm font-semibold text-slate-800 group-hover:text-[#F3D03E]">
-                          <T>{item.title}</T>
-                        </div>
-                        <div className="text-xs text-slate-500 line-clamp-1">
-                          <T>{item.summary}</T>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
+      {/* Grid Cards Container (2-Column Layout) */}
+      <div className="grid grid-cols-2 gap-3 max-h-[400px] overflow-y-auto pr-1">
+        {programs.map((item) => (
+          <Link
+            key={item.slug}
+            href={`/programs/${item.slug}`}
+            onClick={() => setIsProgramOpen(false)} // Closes dropdown smoothly when a link is clicked
+            className="group relative p-3.5 rounded-xl bg-slate-50/70 hover:bg-amber-50/40 border border-slate-100 hover:border-amber-200/60 transition-all duration-200 flex flex-col justify-between shadow-sm hover:shadow-md"
+          >
+            <div>
+              <div className="text-sm font-bold text-slate-900 group-hover:text-amber-600 transition-colors flex items-center justify-between">
+                <T>{item.title}</T>
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity text-amber-500 text-xs">→</span>
+              </div>
+              <div className="text-xs text-slate-500 mt-1 line-clamp-2 leading-relaxed">
+                <T>{item.summary}</T>
+              </div>
             </div>
+          </Link>
+        ))}
+      </div>
+
+    </div>
+  )}
+</div>
 
             <Link href="/contact" className="hover:text-[#F3D03E] transition-colors">
               {t.contact}
             </Link>
-            
+
             <Link
               href={VOLUNTEER_FORM_URL}
               target="_blank"
@@ -139,7 +154,7 @@ export default function Navbar() {
             <div className="bg-slate-50 border border-slate-200 rounded-lg px-2 py-1 text-xs shadow-sm">
               <AutoTranslator />
             </div>
-            
+
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-slate-800 hover:text-[#F3D03E] p-2 focus:outline-none rounded-lg bg-slate-100"
@@ -161,15 +176,15 @@ export default function Navbar() {
       {/* Enhanced Mobile Drawer Navigation */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-xl rounded-b-2xl animate-fadeIn">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-slate-800 font-bold py-2 border-b border-slate-100 hover:text-amber-500 transition-colors"
           >
             {t.home}
           </Link>
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-slate-800 font-bold py-2 border-b border-slate-100 hover:text-amber-500 transition-colors"
           >
@@ -181,9 +196,9 @@ export default function Navbar() {
             <p className="text-xs font-bold text-amber-500 uppercase tracking-wider mb-2">{t.programs}</p>
             <div className="pl-3 space-y-2 border-l-2 border-amber-400">
               {programs.map((p) => (
-                <Link 
-                  key={p.slug} 
-                  href={`/programs/${p.slug}`} 
+                <Link
+                  key={p.slug}
+                  href={`/programs/${p.slug}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block text-sm text-slate-600 hover:text-amber-600 py-1"
                 >
@@ -193,16 +208,16 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link 
-            href="/donate" 
+          <Link
+            href="/donate"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-slate-800 font-bold py-2 border-b border-slate-100 hover:text-amber-500 transition-colors"
           >
             {t.donate}
-          </Link> 
-          
-          <Link 
-            href="/contact" 
+          </Link>
+
+          <Link
+            href="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block text-slate-800 font-bold py-2 border-b border-slate-100 hover:text-amber-500 transition-colors"
           >
