@@ -9,35 +9,34 @@ interface TProps {
 
 export default function T({ children }: TProps) {
   const { locale, t } = useLanguage();
-
-  const [translatedText, setTranslatedText] = useState(children);
+  const [translated, setTranslated] = useState(children);
 
   useEffect(() => {
-    let isMounted = true;
+    let cancelled = false;
 
-    if (!children) return;
-
-    if (locale === 'en') {
-      setTranslatedText(children);
+    if (!children || locale === 'en') {
+      setTranslated(children);
       return;
     }
 
+    setTranslated(children);
+
     t(children)
-      .then((res) => {
-        if (isMounted && res) {
-          setTranslatedText(res);
+      .then((result) => {
+        if (!cancelled) {
+          setTranslated(result || children);
         }
       })
       .catch(() => {
-        if (isMounted) {
-          setTranslatedText(children);
+        if (!cancelled) {
+          setTranslated(children);
         }
       });
 
     return () => {
-      isMounted = false;
+      cancelled = true;
     };
   }, [children, locale, t]);
 
-  return <>{translatedText}</>;
+  return <>{translated}</>;
 }
