@@ -1,0 +1,14 @@
+{
+  "Navbar": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "donate": "DONATE NOW",
+    "programs": "PROGRAMS",
+    "contact": "CONTACT US",
+    "volunteer": "VOLUNTEER"
+  },
+  "Hero": {
+    "title": "Empowering Youth for a Better Tomorrow",
+    "subtitle": "Join us in our mission to build leadership and skills across communities."
+  }
+}
