@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function EducationProgram() {
   return (
@@ -74,6 +74,7 @@ export default function EducationProgram() {
                 src="/images/programs/youth22.jpg" 
                 alt="Interactive learning session"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority
               />
@@ -96,7 +97,8 @@ export default function EducationProgram() {
                   <strong className="block text-slate-950 font-bold mb-1"><T>Life Skills & Leadership:</T></strong>
                   <T>Communication, teamwork, and critical thinking.</T>
                 </li>
-                <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
+                <li className="p-3 bg-wh
+                ite/60 backdrop-blur-sm rounded-lg border border-white/80">
                   <strong className="block text-slate-950 font-bold mb-1"><T>Mentorship & Guidance:</T></strong>
                   <T>Personalized support and career exploration.</T>
                 </li>
@@ -111,6 +113,7 @@ export default function EducationProgram() {
                 src="/images/programs/youth23.jpg" 
                 alt="Students collaborating"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -143,6 +146,7 @@ export default function EducationProgram() {
               src="/images/programs/youth24.jpg" 
               alt="Classroom students"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover"
             />
           </div>

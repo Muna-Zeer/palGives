@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function ChildPreventiveHealthProgram() {
   return (

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function YouthDevelopment() {
     return (
@@ -48,6 +48,7 @@ export default function YouthDevelopment() {
                             src="/images/programs/youth11.jpg" 
                             alt="Youth workshop"
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                             priority
                         />
@@ -117,6 +118,7 @@ export default function YouthDevelopment() {
                             src="/images/programs/youth20.jpg" 
                             alt="Youth training session"
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                         />
                     </div>
@@ -131,6 +133,7 @@ export default function YouthDevelopment() {
                             src="/images/programs/youth18.jpg" 
                             alt="Classroom interactive workshop"
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                         />
                     </div>
@@ -173,6 +176,7 @@ export default function YouthDevelopment() {
                                 src="/images/programs/youth6.jpg"
                                 alt="Group table discussion"
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
                         </div>
@@ -201,6 +205,7 @@ export default function YouthDevelopment() {
                                 src="/images/programs/youth5.jpg"
                                 alt="Presentation and lecture hall"
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover"
                             />
                         </div>

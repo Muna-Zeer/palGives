@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function WomensEmpowerment() {
   return (
@@ -48,6 +48,7 @@ export default function WomensEmpowerment() {
                 src="/images/programs/youth25.jpg" 
                 alt="Women group discussion"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority
               />
@@ -73,6 +74,7 @@ export default function WomensEmpowerment() {
                 src="/images/programs/youth14.jpg" 
                 alt="Women workshop participants"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -151,6 +153,7 @@ export default function WomensEmpowerment() {
                 src="/images/programs/women-2.jpg" 
                 alt="Entrepreneurship training"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -159,6 +162,7 @@ export default function WomensEmpowerment() {
                 src="/images/programs/youth26.jpg" 
                 alt="Mentorship and support circle"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>

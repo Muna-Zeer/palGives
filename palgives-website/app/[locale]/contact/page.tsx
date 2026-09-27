@@ -1,6 +1,6 @@
 'use client';
 
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function ContactPage() {
   return (

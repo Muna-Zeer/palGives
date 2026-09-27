@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import T from '../../components/T';
+import T from '../../components/T.old';
 
 export default function MentalHealthFamilySupport() {
   return (
@@ -48,6 +48,7 @@ export default function MentalHealthFamilySupport() {
                 src="/images/programs/Health.jpg"
                 alt="Family therapy session"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
                 priority
               />
@@ -73,6 +74,7 @@ export default function MentalHealthFamilySupport() {
                 src="/images/programs/Health2.jpg"
                 alt="Outdoor community activity"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -116,6 +118,7 @@ export default function MentalHealthFamilySupport() {
                   src="/images/programs/Health3.jpg"
                   alt="Psychosocial & Social Support"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -138,6 +141,7 @@ export default function MentalHealthFamilySupport() {
                   src="/images/programs/Health4.jpg"
                   alt="Family Support"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
@@ -160,6 +164,7 @@ export default function MentalHealthFamilySupport() {
                   src="/images/programs/women-health-6.jpg"
                   alt="Training & Life Skills"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
