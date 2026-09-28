@@ -7,7 +7,7 @@ import { programs } from '../data/programs';
 import { VOLUNTEER_FORM_URL } from "../constants";
 import InPageSearch from './SearchBar';
 import AutoTranslator from './AutoTranslator';
-import { useLanguage } from '@/context/LanguageContext';
+import { useLanguage } from '../../context/LanguageContext';
 import T from '../components/T';
 export default function Navbar() {
   const [isProgramOpen, setIsProgramOpen] = useState(false);

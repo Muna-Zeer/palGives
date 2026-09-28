@@ -1,6 +1,6 @@
 'use client';
 
-import { useLanguage } from '@/context/LanguageContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { useRouter, usePathname } from 'next/navigation';
 
 export default function AutoTranslator() {
