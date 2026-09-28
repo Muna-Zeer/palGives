@@ -44,7 +44,6 @@ export default function HomePage() {
         { id: 0, alt: "Al Bustan Association Silwan", src: "/images/partners/salwan.jpg" },
         { id: 1, alt: "The Hope Flowers School", src: "/images/partners/The_hope_flowers_school.jpg" },
         { id: 2, alt: "Al-Quds University", src: "/images/partners/AlQuds.png" },
-        { id: 3, alt: "Partner Logo", src: "/images/partners/partner-logo.png" },
         { id: 4, alt: "Palestine Ahliya University", src: "/images/partners/PAU_logo.png" },
         { id: 5, alt: "Bethlehem Mosaic Center", src: "/images/partners/Mosiac_Center.jpg" },
         { id: 6, alt: "Ministry of Culture", src: "/images/partners/Ministry_of_culture.jpg" },
