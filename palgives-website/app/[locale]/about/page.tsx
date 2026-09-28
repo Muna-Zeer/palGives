@@ -195,7 +195,9 @@ export default function TeamPage() {
       className="w-full min-h-screen bg-white text-gray-800"
       dir={isArabic ? 'rtl' : 'ltr'}
     >
-     
+      {/* =========================
+          HERO SECTION
+      ========================== */}
       <section
         className="relative w-full h-[50vh] sm:h-[55vh] min-h-[380px] flex flex-col justify-center items-center text-center bg-slate-900 bg-cover bg-center px-4 sm:px-6 overflow-hidden shadow-md"
         style={{
@@ -213,6 +215,9 @@ export default function TeamPage() {
         </div>
       </section>
 
+      {/* =========================
+          INTRODUCTION SECTION
+      ========================== */}
       <section className="w-full bg-yellow-400 py-12 sm:py-16 px-4 sm:px-8 shadow-inner">
         <div className="max-w-4xl mx-auto text-center space-y-6 text-gray-900 font-medium text-base sm:text-lg leading-relaxed">
           {/* First paragraph */}
@@ -220,14 +225,14 @@ export default function TeamPage() {
             {isArabic ? (
               <>
                 يتكون فريقنا في{' '}
-                <span className="italic font-semibold notranslate" translate="no">فلسطين تعطي</span>{' '}
+                <span className="italic font-semibold">فلسطين تعطي</span>{' '}
                 من أفراد شغوفين وملتزمين، يكرسون جهودهم لتمكين الأطفال والشباب
                 والنساء في فلسطين.
               </>
             ) : (
               <>
                 Our team at{' '}
-                <span className="italic font-semibold notranslate" translate="no">PalGives</span> is made
+                <span className="italic font-semibold">PalGives</span> is made
                 up of passionate and committed individuals dedicated to
                 empowering children, youth, and women in Palestine.
               </>
@@ -240,7 +245,7 @@ export default function TeamPage() {
               <>
                 نرحب بأعضاء الفريق الذين يتمتعون بالفضول والتعاطف والنزاهة،
                 ولديهم رغبة حقيقية في إحداث أثر إيجابي في المجتمع كل يوم. في{' '}
-                <span className="italic font-semibold notranslate" translate="no">فلسطين تعطي</span>،
+                <span className="italic font-semibold">فلسطين تعطي</span>،
                 نسعى لأن نكون متواضعين ومجتهدين، وفوق كل شيء متعاونين، ونعمل
                 معًا لخلق الفرص وإحداث تغيير هادف.
               </>
@@ -249,7 +254,7 @@ export default function TeamPage() {
                 We welcome team members who are curious, empathetic, and driven
                 by integrity, with a genuine desire to make a positive impact
                 in the community every single day. At{' '}
-                <span className="italic font-semibold notranslate" translate="no">PalGives</span>, we
+                <span className="italic font-semibold">PalGives</span>, we
                 strive to be humble, hardworking, and—above all—collaborative,
                 working together to create opportunities and meaningful change.
               </>
@@ -258,7 +263,9 @@ export default function TeamPage() {
         </div>
       </section>
 
-     
+      {/* =========================
+          TEAM SECTION
+      ========================== */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           {teamMembers.map((member) => {
@@ -274,7 +281,9 @@ export default function TeamPage() {
                 className="flex flex-col group"
                 dir={isArabic ? 'rtl' : 'ltr'}
               >
-               
+                {/* =========================
+                    TEAM MEMBER IMAGE
+                ========================== */}
                 <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-md shadow-sm bg-gray-100">
                   <Image
                     src={member.image}
@@ -285,19 +294,26 @@ export default function TeamPage() {
                   />
                 </div>
 
-              
+                {/* =========================
+                    TEAM MEMBER NAME
+                ========================== */}
                 <h3
-                  className="text-base font-bold text-gray-900 mb-1 notranslate"
+                  className="text-base font-bold text-gray-900 mb-1"
                   translate="no"
                 >
                   {displayName}
                 </h3>
 
-             
+                {/* =========================
+                    TEAM MEMBER ROLE
+                ========================== */}
                 <p className="text-xs font-semibold text-amber-600 mb-2">
                   {displayRole}
                 </p>
-         
+
+                {/* =========================
+                    TEAM MEMBER DESCRIPTION
+                ========================== */}
                 <p className="text-xs text-gray-600 leading-relaxed">
                   {displayDescription}
                 </p>

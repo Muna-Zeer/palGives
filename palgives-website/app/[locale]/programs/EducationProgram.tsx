@@ -1,31 +1,23 @@
 'use client';
 
 import Image from 'next/image';
-import { useLanguage } from '@/context/LanguageContext';
+import T from '../../components/T';
 
 export default function EducationProgram() {
-  const { locale } = useLanguage();
-  const isArabic = locale === 'ar';
-
   return (
-    <div
-      className="w-full min-h-screen bg-slate-50 font-sans text-slate-800"
-      dir={isArabic ? 'rtl' : 'ltr'}
-    >
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
       
       {/* 1. HERO SECTION */}
-      <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center shadow-xs">
+      <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            {isArabic ? 'برنامج تأثير' : 'Impact Program'}
+            <T>Impact Program</T>
           </span>
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight uppercase">
-            {isArabic ? 'برنامج التعليم' : 'EDUCATION PROGRAM'}
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            <T>EDUCATION PROGRAM</T>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {isArabic 
-              ? 'إطلاق الطاقات وتمكين الشباب من خلال مبادرات تعليمية يسهل الوصول إليها وعالية الجودة وبناء المهارات.'
-              : 'Unlocking potential and empowering youth through accessible, high-quality education and skill-building initiatives.'}
+            <T>Unlocking potential and empowering youth through accessible, high-quality education and skill-building initiatives.</T>
           </p>
         </div>
       </section>
@@ -37,59 +29,34 @@ export default function EducationProgram() {
           {/* Overview text */}
           <div className="text-center space-y-4">
             <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-              {isArabic ? 'نظرة عامة' : 'Overview'}
+              <T>Overview</T>
             </h2>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              {isArabic ? 'إطلاق الطاقات، وتمكين الشباب' : 'Unlocking Potential, Empowering Youth'}
+              <T>Unlocking Potential, Empowering Youth</T>
             </h3>
             <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-              {isArabic ? (
-                <>
-                  في{' '}
-                  <span className="font-bold text-slate-900 notranslate" translate="no">
-                    فلسطين تعطي
-                  </span>
-                  ، نؤمن بأن كل طفل وشاب يستحق الوصول إلى تعليم عالي الجودة يلهم الفضول، الإبداع، والثقة. يزود{' '}
-                  <span className="font-bold text-slate-900">برنامج التعليم</span>{' '}
-                  الخاص بنا المتعلمين بالمهارات الأكاديمية، الرقمية، والحياتية الأساسية، مما يؤهلهم للنجاح في المدرسة، العمل، والحياة.
-                </>
-              ) : (
-                <>
-                  At{' '}
-                  <span className="font-bold text-slate-900 notranslate" translate="no">PalGives</span>, we believe that every child and young person deserves access to quality education that inspires curiosity, creativity, and confidence. Our <span className="font-bold text-slate-900">Education Program</span> equips learners with essential academic, digital, and life skills—preparing them to succeed in school, work, and life.
-                </>
-              )}
+              <T>At</T> <span className="font-bold text-slate-900 notranslate" translate="no">PalGives</span><T>, we believe that every child and young person deserves access to quality education that inspires curiosity, creativity, and confidence. Our</T> <span className="font-bold text-slate-900"><T>Education Program</T></span> <T>equips learners with essential academic, digital, and life skills—preparing them to succeed in school, work, and life.</T>
             </p>
           </div>
 
-          {/* Why It Matters (Handles RTL border alignment seamlessly) */}
-          <div className={`p-8 bg-slate-50 ${isArabic ? 'border-r-4' : 'border-l-4'} border-[#F3D03E] ${isArabic ? 'rounded-l-2xl' : 'rounded-r-2xl'} shadow-sm space-y-6`}>
+          {/* Why It Matters */}
+          <div className="p-8 bg-slate-50 border-l-4 border-[#F3D03E] rounded-r-2xl shadow-sm space-y-6">
             <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-              {isArabic ? 'لماذا يكتسي هذا البرنامج أهمية؟' : 'WHY IT MATTERS'}
+              <T>WHY IT MATTERS</T>
             </h3>
             <ul className="space-y-3 text-slate-700 text-base font-medium list-disc list-inside">
               <li>
-                <strong className="text-slate-900">85%</strong>{' '}
-                {isArabic 
-                  ? 'من المشاركين لدينا يسجلون تحسناً في الأداء الأكاديمي خلال عام واحد.' 
-                  : 'of our participants report improved academic performance within one year.'}
+                <strong className="text-slate-900">85%</strong> <T>of our participants report improved academic performance within one year.</T>
               </li>
               <li>
-                <strong className="text-slate-900">75%</strong>{' '}
-                {isArabic 
-                  ? 'يكتسبون مهارات رقمية ومهارات في العلوم والتكنولوجيا والهندسة والرياضيات (STEAM) بشكل أقوى.' 
-                  : 'gain stronger digital and STEAM skills.'}
+                <strong className="text-slate-900">75%</strong> <T>gain stronger digital and STEAM skills.</T>
               </li>
               <li>
-                {isArabic 
-                  ? 'التعليم هو المفتاح لكسر حلقات الفقر والبطالة.' 
-                  : 'Education is the key to breaking cycles of poverty and unemployment.'}
+                <T>Education is the key to breaking cycles of poverty and unemployment.</T>
               </li>
             </ul>
             <p className="text-sm font-semibold text-amber-800 bg-amber-50 p-3 rounded-lg border border-amber-200 inline-block">
-              {isArabic 
-                ? 'نحن نركز على التعلم العملي، التوجيه، ودعم المجتمع لضمان نجاح كل طالب.' 
-                : 'We focus on hands-on learning, mentorship, and community support to ensure every student succeeds.'}
+              <T>We focus on hands-on learning, mentorship, and community support to ensure every student succeeds.</T>
             </p>
           </div>
 
@@ -115,32 +82,24 @@ export default function EducationProgram() {
 
             <div className="space-y-6">
               <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                {isArabic ? 'ما نقدمه' : 'What We Offer'}
+                <T>What We Offer</T>
               </h2>
               <ul className="space-y-4 text-sm sm:text-base text-slate-900 font-medium">
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">
-                    {isArabic ? 'الدعم الأكاديمي:' : 'Academic Support:'}
-                  </strong>
-                  {isArabic ? 'دروس تقوية في المواد الأساسية (الرياضيات، العلوم، اللغات).' : 'Tutoring in core subjects (Math, Science, Languages).'}
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Academic Support:</T></strong>
+                  <T>Tutoring in core subjects (Math, Science, Languages).</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">
-                    {isArabic ? 'المهارات الرقمية والعلوم (STEAM):' : 'Digital & STEAM Skills:'}
-                  </strong>
-                  {isArabic ? 'البرمجة، المعرفة التقنية، وحل المشكلات الإبداعي.' : 'Coding, IT literacy, and creative problem-solving.'}
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Digital & STEAM Skills:</T></strong>
+                  <T>Coding, IT literacy, and creative problem-solving.</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">
-                    {isArabic ? 'المهارات الحياتية والقيادة:' : 'Life Skills & Leadership:'}
-                  </strong>
-                  {isArabic ? 'التواصل، العمل الجماعي، والتفكير النقدي.' : 'Communication, teamwork, and critical thinking.'}
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Life Skills & Leadership:</T></strong>
+                  <T>Communication, teamwork, and critical thinking.</T>
                 </li>
                 <li className="p-3 bg-white/60 backdrop-blur-sm rounded-lg border border-white/80">
-                  <strong className="block text-slate-950 font-bold mb-1">
-                    {isArabic ? 'التوجيه والإرشاد:' : 'Mentorship & Guidance:'}
-                  </strong>
-                  {isArabic ? 'دعم شخصي واستكشاف المسار الوظيفي.' : 'Personalized support and career exploration.'}
+                  <strong className="block text-slate-950 font-bold mb-1"><T>Mentorship & Guidance:</T></strong>
+                  <T>Personalized support and career exploration.</T>
                 </li>
               </ul>
             </div>
@@ -160,16 +119,16 @@ export default function EducationProgram() {
 
             <div className="space-y-6 order-1 md:order-2">
               <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
-                {isArabic ? 'الأثر' : 'Impact'}
+                <T>Impact</T>
               </h2>
               <p className="text-base font-bold text-slate-800">
-                {isArabic ? 'من خلال هذا البرنامج، تساعد مؤسسة فلسطين تعطي الشباب على:' : 'Through this program, PalGives helps youth:'}
+                <T>Through this program, PalGives helps youth:</T>
               </p>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>{isArabic ? 'تحسين النتائج الأكاديمية وبناء الثقة بالنفس.' : 'Improve academic outcomes and confidence.'}</li>
-                <li>{isArabic ? 'تطوير التفكير النقدي، والمهارات الرقمية والقيادية.' : 'Develop critical thinking, digital, and leadership skills.'}</li>
-                <li>{isArabic ? 'الوصول إلى فرص تعليمية ومهنية مستقبلية.' : 'Access future educational and career opportunities.'}</li>
-                <li>{isArabic ? 'أن يصبحوا مساهمين فاعلين في مجتمعاتهم.' : 'Become active contributors to their communities.'}</li>
+                <li><T>Improve academic outcomes and confidence.</T></li>
+                <li><T>Develop critical thinking, digital, and leadership skills.</T></li>
+                <li><T>Access future educational and career opportunities.</T></li>
+                <li><T>Become active contributors to their communities.</T></li>
               </ul>
             </div>
           </div>
@@ -193,27 +152,20 @@ export default function EducationProgram() {
 
           <div className="space-y-6">
             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
-              {isArabic ? 'شاركنا العمل' : 'Get Involved'}
+              <T>Get Involved</T>
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-slate-900">
-              {isArabic ? 'انضم إلينا' : 'JOIN US'}
+              <T>JOIN US</T>
             </h2>
             <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
-              <strong className="text-slate-900">
-                {isArabic ? 'كن جزءاً من التغيير!' : 'Be a part of the change!'}
-              </strong>{' '}
-              {isArabic ? 'ادعم فلسطين تعطي في خلق مستقبل مشرق للشباب الفلسطيني. تبرعك يمكن الأطفال من' : 'Support PalGives in creating brighter futures for Palestinian youth. Your contribution empowers children to'}{' '}
-              <span className="font-bold text-slate-900">
-                {isArabic ? 'التعلم، النمو، وإطلاق كامل طاقاتهم' : 'learn, grow, and unlock their full potential'}
-              </span>
-              {isArabic ? '— طالباً تلو الآخر.' : '—one student at a time.'}
+              <strong className="text-slate-900"><T>Be a part of the change!</T></strong> <T>Support PalGives in creating brighter futures for Palestinian youth. Your contribution empowers children to</T> <span className="font-bold text-slate-900"><T>learn, grow, and unlock their full potential</T></span><T>—one student at a time.</T>
             </p>
             <div>
               <a
                 href="/donate"
                 className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
               >
-                {isArabic ? 'ادعم التعليم' : 'Support Education'}
+                <T>Support Education</T>
               </a>
             </div>
           </div>
@@ -225,30 +177,21 @@ export default function EducationProgram() {
       <section className="py-20 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            {isArabic ? 'استثمر في التعليم اليوم' : 'Invest in Education Today'}
+            <T>Invest in Education Today</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            {isArabic 
-              ? 'ساعدنا في توفير المواد التعليمية، الأجهزة الرقمية، والمعلمين الأكفاء للمجتمعات ذات الموارد المحدودة.'
-              : 'Help us provide learning materials, digital devices, and skilled instructors to under-resourced communities.'}
+            <T>Help us provide learning materials, digital devices, and skilled instructors to under-resourced communities.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
               className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              {isArabic ? 'تبرع الآن' : 'Donate Now'}
+              <T>Donate Now</T>
             </a>
           </div>
         </div>
       </section>
-
-      {/* 6. FOOTER COPYRIGHT */}
-      <footer className="py-8 bg-slate-100 border-t border-slate-200 text-center text-xs text-slate-500 font-medium">
-        {isArabic 
-          ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. 2024–2026 فلسطين تعطي ©' 
-          : 'Youth Empowerment Initiative. All Rights Reserved. -2024–2026 PalGives ©'}
-      </footer>
 
     </div>
   );

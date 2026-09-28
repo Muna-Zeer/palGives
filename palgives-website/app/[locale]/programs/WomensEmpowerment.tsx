@@ -1,31 +1,23 @@
 'use client';
 
 import Image from 'next/image';
-import { useLanguage } from '@/context/LanguageContext';
+import T from '../../components/T';
 
 export default function WomensEmpowerment() {
-  const { locale } = useLanguage();
-  const isArabic = locale === 'ar';
-
   return (
-    <div
-      className="w-full min-h-screen bg-slate-50 font-sans text-slate-800"
-      dir={isArabic ? 'rtl' : 'ltr'}
-    >
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
       
       {/* 1. HERO SECTION */}
       <section className="bg-white border-b border-slate-200 py-20 px-6 sm:px-12 text-center">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            {isArabic ? 'برنامج تأثير' : 'Impact Program'}
+            <T>Impact Program</T>
           </span>
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            {isArabic ? 'تمكين المرأة' : "WOMEN'S EMPOWERMENT"}
+            <T>WOMEN&apos;S EMPOWERMENT</T>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            {isArabic
-              ? 'تعزيز القدرات الشخصية والمهنية والاجتماعية للمرأة الفلسطينية لتعزيز الاستقلال الاقتصادي والقيادة.'
-              : 'Strengthening the personal, professional, and social capacities of Palestinian women to foster economic independence and leadership.'}
+            <T>Strengthening the personal, professional, and social capacities of Palestinian women to foster economic independence and leadership.</T>
           </p>
         </div>
       </section>
@@ -34,26 +26,13 @@ export default function WomensEmpowerment() {
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-            {isArabic ? 'نظرة عامة' : 'Overview'}
+            <T>Overview</T>
           </h2>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            {isArabic ? 'بناء القيادة والمرونة' : 'Building Leadership & Resilience'}
+            <T>Building Leadership & Resilience</T>
           </h3>
           <p className="text-slate-600 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
-            {isArabic ? (
-              <>
-                يهدف برنامج{' '}
-                <strong className="text-slate-900">تمكين المرأة</strong>{' '}
-                في مؤسسة{' '}
-                <strong className="text-slate-900 notranslate" translate="no">فلسطين تعطي</strong>{' '}
-                إلى دعم النساء في فلسطين من خلال تعزيز قدراتهن الشخصية والمهنية والاجتماعية، وتمكينهن من المشاركة الفعالة في الحياة الاقتصادية والاجتماعية.
-              </>
-            ) : (
-              <>
-                The <strong className="text-slate-900">Women&apos;s Empowerment</strong> program at{' '}
-                <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> aims to support women in Palestine by enhancing their personal, professional, and social capacities, enabling them to actively participate in economic and social life.
-              </>
-            )}
+            <T>The</T> <strong className="text-slate-900"><T>Women&apos;s Empowerment</T></strong> <T>program at</T> <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> <T>aims to support women in Palestine by enhancing their personal, professional, and social capacities, enabling them to actively participate in economic and social life.</T>
           </p>
         </div>
       </section>
@@ -76,14 +55,14 @@ export default function WomensEmpowerment() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
-                {isArabic ? 'أهداف البرنامج' : 'PROGRAM GOALS'}
+              <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+                <T>PROGRAM GOALS</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-700 font-medium list-disc list-inside">
-                <li>{isArabic ? 'تعزيز الثقة بالنفس والاستقلالية' : 'Boost self-confidence and independence'}</li>
-                <li>{isArabic ? 'تطوير مهارات القيادة والإدارة' : 'Develop leadership and management skills'}</li>
-                <li>{isArabic ? 'دعم النساء في ريادة الأعمال والعمل الحر' : 'Support women in entrepreneurship and freelancing'}</li>
-                <li>{isArabic ? 'تعزيز المشاركة المجتمعية والمواطنة الفاعلة' : 'Promote community engagement and active citizenship'}</li>
+                <li><T>Boost self-confidence and independence</T></li>
+                <li><T>Develop leadership and management skills</T></li>
+                <li><T>Support women in entrepreneurship and freelancing</T></li>
+                <li><T>Promote community engagement and active citizenship</T></li>
               </ul>
             </div>
           </div>
@@ -101,14 +80,14 @@ export default function WomensEmpowerment() {
             </div>
 
             <div className="space-y-6 order-1 md:order-2">
-              <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
-                {isArabic ? 'النتائج المتوقعة' : 'EXPECTED OUTCOMES'}
+              <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+                <T>EXPECTED OUTCOMES</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-700 font-medium list-disc list-inside">
-                <li>{isArabic ? 'زيادة فرصة النساء في المشاركة بسوق العمل' : 'Increased opportunities for women to participate in the workforce'}</li>
-                <li>{isArabic ? 'تعزيز القدرة على قيادة المشاريع والمبادرات' : 'Strengthened capacity to lead projects and initiatives'}</li>
-                <li>{isArabic ? 'بناء مجتمع نسائي داعم مترابط' : "Building a supportive and connected women's community"}</li>
-                <li>{isArabic ? 'تمكين المرأة لتصبح مساهمة فاعلة في التنمية الاقتصادية والاجتماعية' : 'Empowering women to become active contributors to economic and social development'}</li>
+                <li><T>Increased opportunities for women to participate in the workforce</T></li>
+                <li><T>Strengthened capacity to lead projects and initiatives</T></li>
+                <li><T>Building a supportive and connected women&apos;s community</T></li>
+                <li><T>Empowering women to become active contributors to economic and social development</T></li>
               </ul>
             </div>
           </div>
@@ -124,44 +103,44 @@ export default function WomensEmpowerment() {
           <div className="space-y-8">
             <div>
               <span className="text-xs font-bold tracking-widest uppercase text-slate-800">
-                {isArabic ? 'الاستراتيجية الأساسية' : 'Core Strategy'}
+                <T>Core Strategy</T>
               </span>
-              <h2 className="text-2xl sm:text-4xl font-black tracking-tight mt-1 uppercase">
-                {isArabic ? 'ركائز البرنامج' : 'PROGRAM PILLARS'}
+              <h2 className="text-2xl sm:text-4xl font-black tracking-tight mt-1">
+                <T>PROGRAM PILLARS</T>
               </h2>
             </div>
 
             <div className="space-y-4">
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  {isArabic ? '1. التدريب المهني وريادة الأعمال' : '1. Professional Training & Entrepreneurship'}
+                  <T>1. Professional Training & Entrepreneurship</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>{isArabic ? 'ورش عمل حول تأسيس المشاريع الصغيرة والمتوسطة' : 'Workshops on establishing small and medium enterprises'}</li>
-                  <li>{isArabic ? 'إدارة الأعمال والتخطيط المالي' : 'Business management and financial planning'}</li>
-                  <li>{isArabic ? 'التسويق الرقمي وبناء العلامة التجارية' : 'Digital marketing and brand building'}</li>
+                  <li><T>Workshops on establishing small and medium enterprises</T></li>
+                  <li><T>Business management and financial planning</T></li>
+                  <li><T>Digital marketing and brand building</T></li>
                 </ul>
               </div>
 
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  {isArabic ? '2. تطوير المهارات الشخصية والقيادية' : '2. Personal & Leadership Skills Development'}
+                  <T>2. Personal & Leadership Skills Development</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>{isArabic ? 'مهارات التواصل الفعال' : 'Effective communication skills'}</li>
-                  <li>{isArabic ? 'التفكير النقدي وحل المشكلات' : 'Critical thinking and problem-solving'}</li>
-                  <li>{isArabic ? 'القيادة وإدارة الوقت' : 'Leadership and time management'}</li>
+                  <li><T>Effective communication skills</T></li>
+                  <li><T>Critical thinking and problem-solving</T></li>
+                  <li><T>Leadership and time management</T></li>
                 </ul>
               </div>
 
               <div className="p-5 bg-white/70 backdrop-blur-sm rounded-xl border border-white shadow-sm space-y-2">
                 <h3 className="font-bold text-slate-950 text-base sm:text-lg">
-                  {isArabic ? '3. التوجيه والدعم المستمر' : '3. Mentorship & Support'}
+                  <T>3. Mentorship & Support</T>
                 </h3>
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-800 font-medium list-disc list-inside">
-                  <li>{isArabic ? 'جلسات إرشاد فردية مع الخبراء' : 'Individual guidance sessions with experts'}</li>
-                  <li>{isArabic ? 'بناء شبكة دعم من القيادات النسائية' : 'Building a support network of women leaders'}</li>
-                  <li>{isArabic ? 'متابعة مستمرة للمشاريع والمبادرات' : 'Ongoing follow-up for projects and initiatives'}</li>
+                  <li><T>Individual guidance sessions with experts</T></li>
+                  <li><T>Building a support network of women leaders</T></li>
+                  <li><T>Ongoing follow-up for projects and initiatives</T></li>
                 </ul>
               </div>
             </div>
@@ -196,19 +175,17 @@ export default function WomensEmpowerment() {
       <section className="py-20 sm:py-24 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            {isArabic ? 'ادعم المبادرات النسائية في فلسطين' : 'Support Women-Led Initiatives in Palestine'}
+            <T>Support Women-Led Initiatives in Palestine</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            {isArabic
-              ? 'دعمك يساعد في تمويل منح الأعمال، برامج التوجيه، والورش المهنية للنساء الطموحات.'
-              : 'Your support helps fund business grants, mentorship programs, and vocational workshops for ambitious women.'}
+            <T>Your support helps fund business grants, mentorship programs, and vocational workshops for ambitious women.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
               className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              {isArabic ? 'مكّني المرأة اليوم' : 'Empower Women Today'}
+              <T>Empower Women Today</T>
             </a>
           </div>
         </div>

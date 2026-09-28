@@ -1,35 +1,23 @@
 'use client';
 
 import Image from 'next/image';
-import { useLanguage } from '@/context/LanguageContext';
+import T from '../../components/T';
 
 export default function MentalHealthFamilySupport() {
-  const { locale } = useLanguage();
-  const isArabic = locale === 'ar';
-
   return (
-    <div
-      className="w-full min-h-screen bg-slate-50 font-sans text-slate-800"
-      dir={isArabic ? 'rtl' : 'ltr'}
-    >
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
 
       {/* 1. HERO SECTION */}
-      <section
-        className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4"
-        style={{ backgroundImage: "url('/images/')" }}
-      >
-        <div className="absolute inset-0 bg-slate-900/40"></div>
-        <div className="relative z-10 max-w-5xl mx-auto space-y-4">
+      <section className="relative w-full h-[70vh] min-h-[450px] flex flex-col justify-center items-center text-center bg-stone-100 bg-cover bg-center px-4" style={{ backgroundImage: "url('/images/')" }}>
+        <div className="max-w-5xl mx-auto space-y-4">
           <span className="inline-block px-3 py-1 bg-[#F3D03E] text-slate-900 text-xs font-extrabold tracking-widest uppercase rounded">
-            {isArabic ? 'برنامج تأثير' : 'Impact Program'}
+            <T>Impact Program</T>
           </span>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-            {isArabic ? 'الصحة النفسية ودعم الأسرة' : 'MENTAL HEALTH & FAMILY SUPPORT'}
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            <T>MENTAL HEALTH & FAMILY SUPPORT</T>
           </h1>
-          <p className="text-base sm:text-lg text-slate-100 max-w-3xl mx-auto leading-relaxed">
-            {isArabic
-              ? 'تعزيز الرفاه العاطفي، توطيد الروابط الأسرية، وتقديم الرعاية النفسية والاجتماعية الأساسية للأطفال، الشباب، وأولياء الأمور.'
-              : 'Promoting emotional well-being, strengthening family bonds, and providing essential psychosocial care for children, youth, and parents.'}
+          <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <T>Promoting emotional well-being, strengthening family bonds, and providing essential psychosocial care for children, youth, and parents.</T>
           </p>
         </div>
       </section>
@@ -38,26 +26,13 @@ export default function MentalHealthFamilySupport() {
       <section className="py-20 sm:py-28 px-6 sm:px-12 bg-white">
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">
-            {isArabic ? 'نظرة عامة' : 'Overview'}
+            <T>Overview</T>
           </h2>
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            {isArabic ? 'رعاية المرونة والرفاه النفسي' : 'Nurturing Resilience & Well-being'}
+            <T>Nurturing Resilience & Well-being</T>
           </h3>
           <p className="text-slate-600 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
-            {isArabic ? (
-              <>
-                يهدف برنامج{' '}
-                <strong className="text-slate-900">الصحة النفسية ودعم الأسرة</strong>{' '}
-                في مؤسسة{' '}
-                <strong className="text-slate-900 notranslate" translate="no">فلسطين تعطي</strong>{' '}
-                إلى تعزيز الصحة النفسية للأطفال والشباب وأفراد الأسرة، وتوفير الدعم اللازم لتقوية الروابط الأسرية وتمكين الأسر من مواجهة تحديات الحياة اليومية بطريقة صحية ومستدامة.
-              </>
-            ) : (
-              <>
-                The <strong className="text-slate-900">Mental Health & Family Support</strong> program at{' '}
-                <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> aims to promote the mental well-being of children, youth, and family members, providing the necessary support to strengthen family bonds and empower families to face daily challenges in a healthy and sustainable way.
-              </>
-            )}
+            <T>The</T> <strong className="text-slate-900"><T>Mental Health & Family Support</T></strong> <T>program at</T> <strong className="text-slate-900 notranslate" translate="no">PalGives</strong> <T>aims to promote the mental well-being of children, youth, and family members, providing the necessary support to strengthen family bonds and empower families to face daily challenges in a healthy and sustainable way.</T>
           </p>
         </div>
       </section>
@@ -80,14 +55,14 @@ export default function MentalHealthFamilySupport() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
-                {isArabic ? 'أهداف البرنامج' : 'PROGRAM GOALS'}
+              <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+                <T>PROGRAM GOALS</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>{isArabic ? 'تحسين الصحة النفسية للأطفال والشباب' : 'Enhance the mental health of children and youth'}</li>
-                <li>{isArabic ? 'توفر الدعم النفسي والاجتماعي للأسر' : 'Provide psychosocial and social support to families'}</li>
-                <li>{isArabic ? 'تعزيز مهارات التعامل مع الضغوط والتحديات اليومية' : 'Strengthen skills for coping with daily pressures and challenges'}</li>
-                <li>{isArabic ? 'بناء بيئة أسرية صحية ومستقرة' : 'Build a healthy and stable family environment'}</li>
+                <li><T>Enhance the mental health of children and youth</T></li>
+                <li><T>Provide psychosocial and social support to families</T></li>
+                <li><T>Strengthen skills for coping with daily pressures and challenges</T></li>
+                <li><T>Build a healthy and stable family environment</T></li>
               </ul>
             </div>
           </div>
@@ -105,14 +80,14 @@ export default function MentalHealthFamilySupport() {
             </div>
 
             <div className="space-y-6 order-1 md:order-2">
-              <h2 className="text-2xl sm:text-4xl font-black tracking-tight uppercase">
-                {isArabic ? 'النتائج المتوقعة' : 'EXPECTED OUTCOMES'}
+              <h2 className="text-2xl sm:text-4xl font-black tracking-tight">
+                <T>EXPECTED OUTCOMES</T>
               </h2>
               <ul className="space-y-3 text-sm sm:text-base text-slate-900 font-medium list-disc list-inside">
-                <li>{isArabic ? 'تحسن الصحة النفسية للأطفال والشباب' : 'Improved mental health for children and youth'}</li>
-                <li>{isArabic ? 'روابط أسرية أقوى وتواصل فعال' : 'Strengthened family bonds and effective communication'}</li>
-                <li>{isArabic ? 'زيادة قدرة الأسرة على إدارة الضغوط والتحديات' : 'Increased family capacity to manage pressures and challenges'}</li>
-                <li>{isArabic ? 'إرساء بيئة أسرية داعمة ومستقرة تعزز نمو الأطفال والشباب' : "Establishing a supportive and stable family environment that fosters children's and youth's growth"}</li>
+                <li><T>Improved mental health for children and youth</T></li>
+                <li><T>Strengthened family bonds and effective communication</T></li>
+                <li><T>Increased family capacity to manage pressures and challenges</T></li>
+                <li><T>Establishing a supportive and stable family environment that fosters children&apos;s and youth&apos;s growth</T></li>
               </ul>
             </div>
           </div>
@@ -126,10 +101,10 @@ export default function MentalHealthFamilySupport() {
 
           <div className="text-center space-y-3">
             <span className="text-xs font-bold tracking-widest uppercase text-amber-600">
-              {isArabic ? 'الاستراتيجية الأساسية' : 'Core Strategy'}
+              <T>Core Strategy</T>
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight uppercase">
-              {isArabic ? 'ركائز البرنامج' : 'PROGRAM PILLARS'}
+            <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              <T>PROGRAM PILLARS</T>
             </h2>
           </div>
 
@@ -149,12 +124,12 @@ export default function MentalHealthFamilySupport() {
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  {isArabic ? 'الدعم النفسي والاجتماعي' : 'Psychosocial & Social Support'}
+                  <T>Psychosocial & Social Support</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>{isArabic ? 'جلسات العلاج الفردي والجماعي' : 'Individual and group therapy sessions'}</li>
-                  <li>{isArabic ? 'برامج لتعزيز الثقة بالنفس والتكيف الاجتماعي' : 'Programs to boost self-confidence and social adaptation'}</li>
-                  <li>{isArabic ? 'ورش عمل حول إدارة المشاعر والتعامل مع التوتر' : 'Workshops on managing emotions and handling stress'}</li>
+                  <li><T>Individual and group therapy sessions</T></li>
+                  <li><T>Programs to boost self-confidence and social adaptation</T></li>
+                  <li><T>Workshops on managing emotions and handling stress</T></li>
                 </ul>
               </div>
             </div>
@@ -172,12 +147,12 @@ export default function MentalHealthFamilySupport() {
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  {isArabic ? 'دعم الأسرة' : 'Family Support'}
+                  <T>Family Support</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>{isArabic ? 'جلسات الإرشاد والتوجيه الأسري' : 'Family guidance and counseling sessions'}</li>
-                  <li>{isArabic ? 'تعزيز التواصل الصحي والعلاقات الأسرية' : 'Promoting healthy communication and family relationships'}</li>
-                  <li>{isArabic ? 'برامج لمساعدة أولياء الأمور في دعم أطفالهم أكاديمياً واجتماعياً' : 'Programs to help parents support their children academically and socially'}</li>
+                  <li><T>Family guidance and counseling sessions</T></li>
+                  <li><T>Promoting healthy communication and family relationships</T></li>
+                  <li><T>Programs to help parents support their children academically and socially</T></li>
                 </ul>
               </div>
             </div>
@@ -195,12 +170,12 @@ export default function MentalHealthFamilySupport() {
               </div>
               <div className="p-6 space-y-3 flex-1">
                 <h3 className="font-extrabold text-slate-900 text-lg">
-                  {isArabic ? 'التدريب والمهارات الحياتية' : 'Training & Life Skills'}
+                  <T>Training & Life Skills</T>
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600 list-disc list-inside">
-                  <li>{isArabic ? 'برامج لتطوير مهارات حل المشكلات واتخاذ القرار' : 'Programs to develop problem-solving and decision-making skills'}</li>
-                  <li>{isArabic ? 'تعزيز مهارات التواصل بين أفراد الأسرة' : 'Enhancing communication skills among family members'}</li>
-                  <li>{isArabic ? 'ورش عمل حول إدارة الوقت وتنظيم الحياة الأسرية' : 'Workshops on time management and organizing family life'}</li>
+                  <li><T>Programs to develop problem-solving and decision-making skills</T></li>
+                  <li><T>Enhancing communication skills among family members</T></li>
+                  <li><T>Workshops on time management and organizing family life</T></li>
                 </ul>
               </div>
             </div>
@@ -214,19 +189,17 @@ export default function MentalHealthFamilySupport() {
       <section className="py-20 sm:py-24 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black">
-            {isArabic ? 'ادعم الرفاه الأسري في فلسطين' : 'Support Family Well-being in Palestine'}
+            <T>Support Family Well-being in Palestine</T>
           </h2>
           <p className="text-slate-300 text-sm sm:text-base">
-            {isArabic
-              ? 'دعمك يوفر الاستشارات النفسية المهنية، الورش الأسرية، ودوائر دعم الشباب لبناء مجتمعات مرنة وقوية.'
-              : 'Your support provides professional psychological counseling, family workshops, and youth support circles to build resilient communities.'}
+            <T>Your support provides professional psychological counseling, family workshops, and youth support circles to build resilient communities.</T>
           </p>
           <div className="pt-2">
             <a
               href="/donate"
               className="inline-block px-8 py-3.5 bg-[#F3D03E] text-slate-900 font-bold uppercase tracking-wider text-sm rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
             >
-              {isArabic ? 'ادعم برامج الصحة النفسية' : 'Support Mental Health Programs'}
+              <T>Support Mental Health Programs</T>
             </a>
           </div>
         </div>

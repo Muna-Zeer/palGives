@@ -1,99 +1,40 @@
-export interface Program {
-  title: {
-    en: string;
-    ar: string;
-  };
-  slug: string;
-  summary: {
-    en: string;
-    ar: string;
-  };
-  image: string;
-  badge: {
-    en: string;
-    ar: string;
-  };
-}
+import { Program } from '../types/program';
+import T from '../components/T';
 
 export const programs: Program[] = [
   {
-    title: {
-      en: 'Youth Development & Entrepreneurship',
-      ar: 'تنمية الشباب وريادة الأعمال',
-    },
+    title: 'Youth Development & Entrepreneurship',
     slug: 'youth-development-entrepreneurship',
-    summary: {
-      en: 'Empowering young leaders with business skills, mentorship, and career opportunities.',
-      ar: 'تمكين القادة الشباب بالمهارات التجارية، الإرشاد، وفرص التطور المهني.',
-    },
+    summary: 'Empowering young leaders with business skills, mentorship, and career opportunities.',
     image: '/images/youth.jpg',
-    badge: {
-      en: 'Youth & Future',
-      ar: 'الشباب والمستقبل',
-    },
+    badge: 'Youth & Future',
   },
   {
-    title: {
-      en: 'Education Program',
-      ar: 'برنامج التعليم',
-    },
+    title: 'Education Program',
     slug: 'education-program',
-    summary: {
-      en: 'Scholarships, academic support, and modern learning tools for students.',
-      ar: 'المنح الدراسية، الدعم الأكاديمي، وأدوات التعلم الحديثة للطلاب.',
-    },
+    summary: 'Scholarships, academic support, and modern learning tools for students.',
     image: '/images/education.jpg',
-    badge: {
-      en: 'Education',
-      ar: 'التعليم',
-    },
+    badge: 'Education',
   },
   {
-    title: {
-      en: "Women's Empowerment",
-      ar: 'تمكين المرأة',
-    },
+    title: "Women's Empowerment",
     slug: 'womens-empowerment',
-    summary: {
-      en: 'Vocational training, economic independence, and advocacy programs for women.',
-      ar: 'التدريب المهني، الاستقلال الاقتصادي، وبرامج الدعم والتمكين للنساء.',
-    },
+    summary: 'Vocational training, economic independence, and advocacy programs for women.',
     image: '/images/women.jpg',
-    badge: {
-      en: 'Empowerment',
-      ar: 'التمكين',
-    },
+    badge: 'Empowerment',
   },
   {
-    title: {
-      en: 'Mental Health & Family Support',
-      ar: 'الصحة النفسية ودعم الأسرة',
-    },
+    title: 'Mental Health & Family Support',
     slug: 'mental-health-family-support',
-    summary: {
-      en: 'Psychosocial support, counseling, and wellness workshops for families.',
-      ar: 'الدعم النفسي والاجتماعي، الاستشارات، وورش عمل العافية للعائلات.',
-    },
+    summary: 'Psychosocial support, counseling, and wellness workshops for families.',
     image: '/images/mental-health.jpg',
-    badge: {
-      en: 'Wellness',
-      ar: 'العافية',
-    },
+    badge: 'Wellness',
   },
   {
-    title: {
-      en: 'Child Preventive Health Program',
-      ar: 'برنامج صحة الطفل الوقائية',
-    },
+    title: 'Child Preventive Health Program',
     slug: 'child-preventive-health-program',
-    summary: {
-      en: 'Healthcare checkups, nutrition support, and preventative care for children.',
-      ar: 'الفحوصات الطبية، دعم التغذية، والرعاية الوقائية للأطفال.',
-    },
+    summary: 'Healthcare checkups, nutrition support, and preventative care for children.',
     image: '/images/child-health.jpg',
-    badge: {
-      en: 'Healthcare',
-      ar: 'الرعاية الصحية',
-    },
+    badge: 'Healthcare',
   },
 ];
