@@ -1,23 +1,36 @@
-import { notFound } from 'next/navigation';
-// تعديل المسار ليصبح نسبياً وصحيحاً من داخل مجلد slugs
-import { programs } from '../data/programs';
-import ProgramDetailsCard from '../components/ProgramDetailsCard';
+import { notFound } from "next/navigation";
+import type { ComponentType } from "react";
 
-export default async function SlugPage({
+import YouthDevelopment from "../YouthDevelopment";
+import EducationProgram from "../EducationProgram";
+import WomensEmpowerment from "../WomensEmpowerment";
+import MentalHealthFamilySupport from "../MentalHealthFamilySupport";
+import ChildPreventiveHealthProgram from "../ChildPreventiveHealthProgram";
+
+const programComponents: Record<string, ComponentType> = {
+  "youth-development-entrepreneurship": YouthDevelopment,
+  "education-program": EducationProgram,
+  "womens-empowerment": WomensEmpowerment,
+  "mental-health-family-support": MentalHealthFamilySupport,
+  "child-preventive-health-program": ChildPreventiveHealthProgram,
+};
+
+export default async function ProgramPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
   const { slug } = await params;
-  const program = programs.find((p) => p.id === slug);
 
-  if (!program) {
+  const ProgramSelect = programComponents[slug];
+
+  if (!ProgramSelect) {
     notFound();
   }
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
-      <ProgramDetailsCard program={program} />
+      <ProgramSelect />
     </main>
   );
 }
