@@ -41,7 +41,7 @@ export default function TeamPage() {
         "General Director of PalGives, overseeing the organization's management and strategic direction while leading the team in implementing programs and initiatives that support children, youth, and women in the Palestinian community.",
       descriptionAr:
         'المدير العام في مؤسسة فلسطين تعطي، ويشرف على إدارة المؤسسة وتوجهها الاستراتيجي، ويقود الفريق في تنفيذ البرامج والمبادرات التي تدعم الأطفال والشباب والنساء في المجتمع الفلسطيني.',
-      image: '/images/teamMembers/khalil-abu-kamel.png',
+      image: '/images/teamMembers/Khalil-abu-kamel.png',
     },
 
     {
@@ -106,7 +106,7 @@ export default function TeamPage() {
         'An ambitious young Jerusalemite volunteering with the Community Committee at PalGives. He contributes his energy and skills to community projects and initiatives that support and empower youth and children locally.',
       descriptionAr:
         'شاب مقدسي طموح يتطوع في لجنة المجتمع المحلي في مؤسسة فلسطين تعطي، ويساهم بجهده ومهاراته في دعم المشاريع والمبادرات المجتمعية وتمكين الشباب والأطفال على المستوى المحلي.',
-      image: '/images/teamMembers/khalil.png',
+      image: '/images/teamMembers/Khalil.png',
     },
 
     {
@@ -132,7 +132,7 @@ export default function TeamPage() {
         'Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and strengthen their role in the community.',
       descriptionAr:
         'مدير البرامج في مؤسسة فلسطين تعطي، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
-      image: '/images/teamMembers/baher.png',
+      image: '/images/teamMembers/Baher.png',
     },
 
     {
