@@ -152,7 +152,10 @@ export default function DonatePage() {
       {/* 3. WHY SUPPORT PALGIVES? */}
       <section className="bg-[#F3D03E] py-20 sm:py-24 px-6 sm:px-12 text-slate-900">
         <div className="max-w-4xl mx-auto space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-center sm:text-left">
+          <h2
+            className={`text-2xl sm:text-3xl font-black tracking-tight ${isArabic ? 'text-right' : 'text-left'
+              }`}
+          >
             {content.whySupport}
           </h2>
 

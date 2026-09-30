@@ -100,14 +100,9 @@ export default function HomePage() {
       src: '/images/partners/AlQuds.png',
     },
     {
-      id: 3,
-      alt: 'Partner Logo',
-      src: '/images/partners/partner-logo.png',
-    },
-    {
       id: 4,
       alt: 'Palestine Ahliya University',
-      src: '/images/partners/PAU_logo.png',
+      src: '/images/partners/PAU_Logo.png',
     },
     {
       id: 5,
@@ -147,7 +142,7 @@ export default function HomePage() {
       <section
         className="relative w-full h-[75vh] min-h-[500px] flex flex-col justify-center items-center text-center bg-stone-900 bg-cover bg-center px-4 overflow-hidden shadow-xl"
         style={{
-          backgroundImage: "url('/images/palGives_Imgs/home-Img.jpeg')",
+          backgroundImage: "url('/images/palGives_Imgs/home_page.jpeg')",
         }}
       >
         {/* Light subtle gradient overlay */}
