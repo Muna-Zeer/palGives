@@ -9,16 +9,21 @@ import React, {
 } from 'react';
 
 interface LanguageContextType {
-  locale: string;
-  setLocale: (lang: string) => void;
+  locale: 'en' | 'ar';
+  setLocale: (lang: 'en' | 'ar') => void;
+  isArabic: boolean;
+
+  // Kept temporarily so existing components using t() don't break.
+  // It no longer calls any translation API.
   t: (text: string) => Promise<string>;
 }
+
 const translationGlossary: Record<string, Record<string, string>> = {
   ar: {
     // Navigation
-    'HOME': 'الرئيسية',
-    'Home': 'الرئيسية',
-    'home': 'الرئيسية',
+    HOME: 'الرئيسية',
+    Home: 'الرئيسية',
+    home: 'الرئيسية',
 
     'ABOUT US': 'من نحن',
     'About Us': 'من نحن',
@@ -34,13 +39,13 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'Donate Now': 'تبرع الآن',
     'Donate now': 'تبرع الآن',
 
-    'PROGRAMS': 'برامجنا',
-    'Programs': 'برامجنا',
-    'programs': 'برامجنا',
+    PROGRAMS: 'برامجنا',
+    Programs: 'برامجنا',
+    programs: 'برامجنا',
 
-    'VOLUNTEER': 'تطوع',
-    'Volunteer': 'تطوع',
-    'volunteer': 'تطوع',
+    VOLUNTEER: 'تطوع',
+    Volunteer: 'تطوع',
+    volunteer: 'تطوع',
 
     // Common buttons
     'GET INVOLVED': 'شارك معنا',
@@ -55,11 +60,11 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'VIEW ALL': 'عرض الكل',
     'View All': 'عرض الكل',
 
-    'SUBMIT': 'إرسال',
-    'Submit': 'إرسال',
+    SUBMIT: 'إرسال',
+    Submit: 'إرسال',
 
-    'SEND': 'إرسال',
-    'Send': 'إرسال',
+    SEND: 'إرسال',
+    Send: 'إرسال',
 
     'JOIN US': 'انضم إلينا',
     'Join Us': 'انضم إلينا',
@@ -68,34 +73,34 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'Support Us': 'ادعمنا',
 
     // PalGives
-    'PALGIVES': 'فلسطين تعطي',
-    'PalGives': 'فلسطين تعطي',
-    'palgives': 'فلسطين تعطي',
+    PALGIVES: 'فلسطين تعطي',
+    PalGives: 'فلسطين تعطي',
+    palgives: 'فلسطين تعطي',
 
     'PALGIVES FOUNDATION': 'مؤسسة فلسطين تعطي',
     'PalGives Foundation': 'مؤسسة فلسطين تعطي',
     'palgives foundation': 'مؤسسة فلسطين تعطي',
 
-
+    // Team roles
     'Director of the Medical Committee': 'مديرة اللجنة الطبية',
 
-'Northern Area Coordinator': 'منسقة المنطقة الشمالية',
+    'Northern Area Coordinator': 'منسقة المنطقة الشمالية',
 
-'Program Director': 'مدير البرامج',
+    'Program Director': 'مدير البرامج',
 
-'Director of the Cultural Committee': 'مدير اللجنة الثقافية',
+    'Director of the Cultural Committee': 'مدير اللجنة الثقافية',
 
-'Director of the Medical Committee at PalGives, overseeing all medical and health-related activities, ensuring quality healthcare and support for children, youth, and the local community.':
-  'مديرة اللجنة الطبية في فلسطين تعطي، وتشرف على جميع الأنشطة الطبية والصحية، وتضمن جودة الرعاية الصحية والدعم للأطفال والشباب والمجتمع المحلي.',
+    'Director of the Medical Committee at PalGives, overseeing all medical and health-related activities, ensuring quality healthcare and support for children, youth, and the local community.':
+      'مديرة اللجنة الطبية في فلسطين تعطي، وتشرف على جميع الأنشطة الطبية والصحية، وتضمن جودة الرعاية الصحية والدعم للأطفال والشباب والمجتمع المحلي.',
 
-'Northern Area Coordinator at PalGives, responsible for coordinating activities and initiatives in the northern region, supporting children, youth, and the local community to ensure programs reach all beneficiaries effectively.':
-  'منسقة المنطقة الشمالية في فلسطين تعطي، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمع المحلي، وضمان وصول البرامج إلى جميع المستفيدين بفعالية.',
+    'Northern Area Coordinator at PalGives, responsible for coordinating activities and initiatives in the northern region, supporting children, youth, and the local community to ensure programs reach all beneficiaries effectively.':
+      'منسقة المنطقة الشمالية في فلسطين تعطي، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمع المحلي، وضمان وصول البرامج إلى جميع المستفيدين بفعالية.',
 
-'Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and enhance their role in the community.':
-  'مدير البرامج في فلسطين تعطي، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
+    'Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and enhance their role in the community.':
+      'مدير البرامج في فلسطين تعطي، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
 
-'Directs cultural programs and activities at PalGives, fostering creativity, youth dialogue, and community empowerment through cultural initiatives.':
-  'يدير البرامج والأنشطة الثقافية في فلسطين تعطي، ويساهم في تعزيز الإبداع والحوار بين الشباب وتمكين المجتمع من خلال المبادرات الثقافية.',
+    'Directs cultural programs and activities at PalGives, fostering creativity, youth dialogue, and community empowerment through cultural initiatives.':
+      'يدير البرامج والأنشطة الثقافية في فلسطين تعطي، ويساهم في تعزيز الإبداع والحوار بين الشباب وتمكين المجتمع من خلال المبادرات الثقافية.',
   },
 };
 
@@ -108,12 +113,37 @@ export function LanguageProvider({
 }: {
   children: ReactNode;
 }) {
-  const [locale, setLocale] = useState('en');
-  const [cache, setCache] = useState<Record<string, string>>({});
+  const [locale, setLocaleState] = useState<'en' | 'ar'>('en');
 
+  /*
+   * Change language.
+   *
+   * We keep this in one place so every component using
+   * useLanguage() updates automatically.
+   */
+  const setLocale = (lang: 'en' | 'ar') => {
+    setLocaleState(lang);
+  };
+
+  const isArabic = locale === 'ar';
+
+  /*
+   * Temporary compatibility function.
+   *
+   * IMPORTANT:
+   * This function no longer calls /api/translate.
+   * It only checks the local glossary.
+   *
+   * Later, when all <T> components are removed,
+   * we can remove t() completely.
+   */
   const t = async (text: string): Promise<string> => {
-    // English doesn't need translation
-    if (!text || locale === 'en') {
+    if (!text) {
+      return text;
+    }
+
+    // English
+    if (locale === 'en') {
       return text;
     }
 
@@ -123,65 +153,20 @@ export function LanguageProvider({
       return text;
     }
 
-    // -----------------------------------------
-    // 1. Check manual glossary first
-    // -----------------------------------------
-    const glossaryTranslation =
-      translationGlossary[locale]?.[cleanText];
+    // Arabic glossary
+    const translation = translationGlossary.ar[cleanText];
 
-    if (glossaryTranslation) {
-      return glossaryTranslation;
+    if (translation) {
+      return translation;
     }
 
-    // -----------------------------------------
-    // 2. Check cache
-    // -----------------------------------------
-    const cacheKey = `${locale}:${cleanText}`;
-
-    if (cache[cacheKey]) {
-      return cache[cacheKey];
-    }
-
-    // -----------------------------------------
-    // 3. Use Argos translation for everything
-    //    that is not in the glossary
-    // -----------------------------------------
-    try {
-      const response = await fetch('/api/translate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          text: cleanText,
-          targetLanguage: locale,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(
-          `Translation API error: ${response.status}`
-        );
-      }
-
-      const data = await response.json();
-
-      const translated = data.translatedText;
-
-      if (translated) {
-        setCache((prev) => ({
-          ...prev,
-          [cacheKey]: translated,
-        }));
-
-        return translated;
-      }
-
-      return text;
-    } catch (error) {
-      console.error('Translation error:', error);
-      return text;
-    }
+    /*
+     * No API call here.
+     *
+     * If a text is not yet translated, return the original
+     * English text instead of causing a Vercel/API error.
+     */
+    return text;
   };
 
   return (
@@ -189,10 +174,11 @@ export function LanguageProvider({
       value={{
         locale,
         setLocale,
+        isArabic,
         t,
       }}
     >
-      <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <div dir={isArabic ? 'rtl' : 'ltr'}>
         {children}
       </div>
     </LanguageContext.Provider>
@@ -210,3 +196,4 @@ export function useLanguage() {
 
   return context;
 }
+
