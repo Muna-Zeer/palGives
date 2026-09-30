@@ -212,7 +212,7 @@ export default function TeamPage() {
       <section
         className="relative flex min-h-[380px] h-[50vh] w-full items-center justify-center overflow-hidden bg-slate-900 bg-cover bg-center px-4 shadow-md sm:h-[55vh] sm:px-6"
         style={{
-          backgroundImage: "url('/images/PalGives_Imgs/about_image.jpg')",
+          backgroundImage: "url('/images/palgives_imgs/about_image.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/45" />

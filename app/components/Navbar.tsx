@@ -73,7 +73,7 @@ export default function Navbar() {
 
               <div className="w-9 h-9 relative">
                 <Image
-                  src="/images/PalGives_Imgs/PalGives_logo.jpg"
+                  src="/images/palgives_imgs/palgives_logo.jpg"
                   alt="PalGives Logo"
                   fill
                   sizes="36px"
