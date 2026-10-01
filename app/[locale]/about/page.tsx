@@ -138,7 +138,7 @@ export default function TeamPage() {
       roleAr: 'مدير البرامج',
       description: 'Program Director at PalGives, supporting the planning and implementation of its programs and initiatives.',
       descriptionAr: 'مدير البرامج في مؤسسة فلسطين تعطي، ويساهم في التخطيط وتنفيذ برامج المؤسسة ومبادراتها.',
-      image: '/images/teamMembers/Baher.png',
+      image: '/images/teamMembers/Baher_2_img.jpg',
     },
 
 
@@ -181,23 +181,6 @@ export default function TeamPage() {
         'يساهم في تطوير وإدارة الحلول البرمجية والشبكات الرقمية في مؤسسة PalGives – لتمكين الشباب، ودعم التحول الرقمي وتعزيز البنية التقنية للمؤسسة وبرامجها.',
       image: '/images/teamMembers/Naji.jpeg',
     },
-
-
-
-    {
-      id: 13,
-      name: 'Mr. Khalil Basil Radwan',
-      nameAr: 'السيد خليل باسل رضوان',
-      role: 'Administrative Board Member',
-      roleAr: 'عضو مجلس الإدارة',
-      description:
-        'Holds a B.A. in Business Administration and contributes to strategic planning, administrative operations, and organizational development.',
-      descriptionAr:
-        'يحمل درجة البكالوريوس في إدارة الأعمال، ويساهم في التخطيط الاستراتيجي والعمليات الإدارية والتطوير المؤسسي.',
-      image: '/images/teamMembers/Khalil-Basil.jpeg',
-    },
-
-
     {
       id: 14,
       name: 'Ms. Reem Al-Salaymeh',
