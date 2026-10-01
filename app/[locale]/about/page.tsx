@@ -31,6 +31,7 @@ export default function TeamPage() {
       image: '/images/teamMembers/Bisan.png',
     },
 
+
     {
       id: 2,
       name: 'Mr. Khalil Abu Kamel',
@@ -38,11 +39,12 @@ export default function TeamPage() {
       role: 'General Director',
       roleAr: 'المدير العام',
       description:
-        "General Director of PalGives, overseeing the organization's management and strategic direction while leading the team in implementing programs and initiatives that support children, youth, and women in the Palestinian community.",
+        'General Director of PalGives, leading the organization’s overall management, strategic planning, program development, and partnerships while strengthening its impact in youth empowerment and community development.',
       descriptionAr:
-        'المدير العام في مؤسسة فلسطين تعطي، ويشرف على إدارة المؤسسة وتوجهها الاستراتيجي، ويقود الفريق في تنفيذ البرامج والمبادرات التي تدعم الأطفال والشباب والنساء في المجتمع الفلسطيني.',
+        'يقود الإدارة العامة لمؤسسة PalGives، ويشرف على التخطيط الاستراتيجي وتطوير البرامج والمبادرات، وبناء الشراكات، وتعزيز أثر المؤسسة في مجال تمكين الشباب والتنمية المجتمعية.',
       image: '/images/teamMembers/Khalil-abu-kamel.png',
     },
+
 
     {
       id: 3,
@@ -83,18 +85,21 @@ export default function TeamPage() {
       image: '/images/teamMembers/Ammar.png',
     },
 
+
     {
       id: 6,
-      name: 'Dr. Halima Malash',
-      nameAr: 'د. حليمة ملاش',
+      name: 'Dr. Halima Malsh',
+      nameAr: 'د. حليمة ملش',
       role: 'Medical Committee Volunteer',
       roleAr: 'متطوعة في اللجنة الطبية',
       description:
-        'A volunteer with the Medical Committee at PalGives, providing healthcare guidance and contributing to health awareness initiatives for children, youth, and the wider community.',
+        'Contributes her medical expertise as a volunteer with the Medical Committee at PalGives, supporting the organization’s health initiatives and activities for youth and the community.',
       descriptionAr:
-        'متطوعة في اللجنة الطبية في مؤسسة فلسطين تعطي، وتقدم الإرشادات الصحية وتساهم في مبادرات التوعية الصحية للأطفال والشباب والمجتمع بشكل عام.',
+        'تساهم بخبرتها الطبية كمتطوعة ضمن اللجنة الطبية في مؤسسة PalGives – لتمكين الشباب، وتدعم المبادرات والأنشطة الصحية التي تنفذها المؤسسة لخدمة الشباب والمجتمع.',
       image: '/images/teamMembers/Halimah.png',
     },
+
+
 
     {
       id: 7,
@@ -109,70 +114,75 @@ export default function TeamPage() {
       image: '/images/teamMembers/Khalil.png',
     },
 
+
     {
       id: 8,
       name: 'Ms. Duha Ibrahim',
-      nameAr: 'السيدة ضحى إبراهيم',
-      role: 'Director of Media and Communications',
-      roleAr: 'مديرة الإعلام والاتصال',
+      nameAr: 'ضحى إبراهيم',
+      role: 'Public Relations Officer',
+      roleAr: 'مسؤولة العلاقات العامة',
       description:
-        "Director of the Media and Communications Unit at PalGives, overseeing media activities, coverage, and communication efforts that highlight the organization's programs and initiatives.",
+        'Contributes to building and strengthening PalGives’ relationships with partners, institutions, and the local community, coordinating communication and engagement to support the organization’s programs and initiatives and strengthen its community presence.',
       descriptionAr:
-        'مديرة وحدة الإعلام والاتصال في مؤسسة فلسطين تعطي، وتشرف على الأنشطة الإعلامية والتغطية والتواصل بهدف إبراز برامج المؤسسة ومبادراتها.',
+        'تساهم في بناء وتعزيز علاقات مؤسسة PalGives – لتمكين الشباب مع الشركاء والمؤسسات والمجتمع المحلي، والتنسيق والتواصل بما يدعم برامج المؤسسة ومبادراتها ويعزز حضورها المجتمعي.',
       image: '/images/teamMembers/Duha.png',
     },
+
+
 
     {
       id: 9,
       name: 'Mr. Baher Obeidieh',
-      nameAr: 'السيد باهر عبيدية',
+      nameAr: 'السيد بحر عبيدية',
       role: 'Program Director',
       roleAr: 'مدير البرامج',
-      description:
-        'Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and strengthen their role in the community.',
-      descriptionAr:
-        'مدير البرامج في مؤسسة فلسطين تعطي، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
+      description: 'Program Director at PalGives, supporting the planning and implementation of its programs and initiatives.',
+      descriptionAr: 'مدير البرامج في مؤسسة فلسطين تعطي، ويساهم في التخطيط وتنفيذ برامج المؤسسة ومبادراتها.',
       image: '/images/teamMembers/Baher.png',
     },
+
 
     {
       id: 10,
       name: 'Mr. Imad Shakhtour',
-      nameAr: 'السيد عماد شختور',
+      nameAr: 'عماد شختور',
       role: 'Director of the Cultural Committee',
       roleAr: 'مدير اللجنة الثقافية',
       description:
-        'Directs cultural programs and activities at PalGives, fostering creativity, youth dialogue, and community empowerment through cultural initiatives.',
+        'Leads and follows up on the work of the Cultural Committee at PalGives, contributing to the development and implementation of cultural programs and activities and encouraging youth participation in cultural and community initiatives.',
       descriptionAr:
-        'يدير البرامج والأنشطة الثقافية في مؤسسة فلسطين تعطي، ويساهم في تعزيز الإبداع والحوار بين الشباب وتمكين المجتمع من خلال المبادرات الثقافية.',
+        'يتولى إدارة ومتابعة أعمال اللجنة الثقافية في مؤسسة PalGives – لتمكين الشباب، والمساهمة في إعداد وتنفيذ الأنشطة والبرامج الثقافية، وتعزيز مشاركة الشباب في المبادرات الثقافية والمجتمعية.',
       image: '/images/teamMembers/Imad.jpeg',
     },
+
 
     {
       id: 11,
       name: 'Mr. Omar Abu Mayyaleh',
-      nameAr: 'السيد عمر أبو ميالة',
-      role: 'Program Director',
-      roleAr: 'مدير البرامج',
+      nameAr: 'عمر أبو ميالة',
+      role: 'Youth Groups Coordinator',
+      roleAr: 'منسق المجموعات الشبابية',
       description:
-        'Leads the design, implementation, and evaluation of youth empowerment projects while coordinating teams and partners to deliver meaningful community programs.',
+        'Coordinates and follows up with youth groups at PalGives, organizing their participation in programs and initiatives while promoting teamwork, leadership, and community engagement among young people.',
       descriptionAr:
-        'يقود تصميم وتنفيذ وتقييم مشاريع تمكين الشباب، وينسق الفرق والشركاء لتقديم برامج مجتمعية هادفة وذات أثر ملموس.',
+        'يساهم في تنسيق ومتابعة المجموعات الشبابية في مؤسسة PalGives – لتمكين الشباب، وتنظيم مشاركتهم في البرامج والمبادرات، وتعزيز روح العمل الجماعي والقيادة والمشاركة المجتمعية لدى الشباب.',
       image: '/images/teamMembers/Omar.jpeg',
     },
 
     {
       id: 12,
       name: 'Mr. Naji Sobha',
-      nameAr: 'السيد ناجي صبحة',
-      role: 'Software Developer & Digital Specialist',
-      roleAr: 'مطور برمجيات وأخصائي رقمي',
+      nameAr: 'ناجي صبحة',
+      role: 'Software & Digital Networks Developer',
+      roleAr: 'مطور البرمجيات والشبكات الرقمية',
       description:
-        'Software engineer responsible for digital solutions, platform development, and social media content management to strengthen PalGives digital presence and outreach.',
+        'Contributes to developing and managing software solutions and digital networks at PalGives, supporting the organization’s digital transformation and strengthening its technical infrastructure and programs.',
       descriptionAr:
-        'مهندس برمجيات مسؤول عن تطوير الحلول الرقمية والمنصات وإدارة محتوى وسائل التواصل الاجتماعي لتعزيز الحضور الرقمي لمؤسسة فلسطين تعطي والوصول إلى جمهور أوسع.',
+        'يساهم في تطوير وإدارة الحلول البرمجية والشبكات الرقمية في مؤسسة PalGives – لتمكين الشباب، ودعم التحول الرقمي وتعزيز البنية التقنية للمؤسسة وبرامجها.',
       image: '/images/teamMembers/Naji.jpeg',
     },
+
+
 
     {
       id: 13,
@@ -187,18 +197,50 @@ export default function TeamPage() {
       image: '/images/teamMembers/Khalil-Basil.jpeg',
     },
 
+
     {
       id: 14,
       name: 'Ms. Reem Al-Salaymeh',
-      nameAr: 'السيدة ريم السلايمة',
+      nameAr: 'ريم السلايمة',
       role: 'Project Coordinator',
       roleAr: 'منسقة المشاريع',
       description:
-        "Holds a Master's degree in Project Management (MICAD) and a B.Sc. in Agricultural Engineering. She coordinates and monitors PalGives projects, working with teams, partners, and community programs to maximize their impact.",
+        'Coordinates and follows up on PalGives projects and programs, contributing to the organization and implementation of activities and following up with teams and partners to strengthen the quality and impact of programs for the community and youth.',
       descriptionAr:
-        'تحمل درجة الماجستير في إدارة المشاريع (MICAD) ودرجة البكالوريوس في الهندسة الزراعية. تنسق وتتابع مشاريع مؤسسة فلسطين تعطي، وتعمل مع الفرق والشركاء والبرامج المجتمعية لتحقيق أكبر أثر ممكن.',
+        'تتولى السيدة ريم السلايمة تنسيق ومتابعة مشاريع وبرامج مؤسسة PalGives – لتمكين الشباب، والمساهمة في تنظيم وتنفيذ الأنشطة، ومتابعة فرق العمل والشركاء، بما يعزز جودة البرامج وأثرها في المجتمع والشباب.',
       image: '/images/teamMembers/Reem.jpeg',
     },
+
+
+
+    {
+      id: 15,
+      name: 'Mr. Mahmoud Abu Rmeis',
+      nameAr: 'السيد محمود أبو رميس',
+      role: 'Volunteer Coordinator',
+      roleAr: 'منسق المتطوعين',
+      description:
+        'Volunteer Coordinator at PalGives, responsible for recruiting, organizing, and following up with volunteers. He supports youth engagement in programs, activities, and community initiatives, helping strengthen a culture of volunteering, giving, and youth empowerment.',
+      descriptionAr:
+        'منسق المتطوعين في مؤسسة فلسطين تعطي، ويساهم في استقطاب وتنظيم ومتابعة المتطوعين، وتعزيز مشاركتهم في البرامج والأنشطة والمبادرات المجتمعية، بما يدعم ثقافة التطوع والعطاء وتمكين الشباب.',
+      image: '/images/teamMembers/Mahmoud.jpg',
+    },
+
+    {
+      id: 16,
+      name: 'Mr. Amjad Al-Shuweiki',
+      nameAr: 'السيد أمجد الشويكي',
+      role: 'Media & Digital Production Officer',
+      roleAr: 'مسؤول الإنتاج الإعلامي والرقمي',
+      description:
+        'Media & Digital Production Officer at PalGives, contributing to the management and production of the organization’s media and digital content, documenting its activities and initiatives, and strengthening PalGives’ presence and mission of youth empowerment across digital platforms.',
+      descriptionAr:
+        'مسؤول الإنتاج الإعلامي والرقمي في مؤسسة فلسطين تعطي، ويساهم في إدارة وإنتاج المحتوى الإعلامي والرقمي للمؤسسة، وتوثيق أنشطتها ومبادراتها، وتعزيز حضور مؤسسة فلسطين تعطي ورسالتها في تمكين الشباب عبر المنصات الرقمية.',
+      image: '/images/teamMembers/Amjad.jpg',
+    },
+
+
+
   ];
 
   return (
@@ -234,9 +276,8 @@ export default function TeamPage() {
       ========================== */}
       <section className="w-full bg-yellow-400 px-5 py-12 shadow-inner sm:px-8 sm:py-16">
         <div
-          className={`mx-auto max-w-4xl space-y-6 text-gray-900 ${
-            isArabic ? 'text-right' : 'text-center'
-          }`}
+          className={`mx-auto max-w-4xl space-y-6 text-gray-900 ${isArabic ? 'text-right' : 'text-center'
+            }`}
         >
           <p className="text-base font-medium leading-relaxed sm:text-lg">
             {isArabic ? (
@@ -332,9 +373,8 @@ export default function TeamPage() {
 
                   {/* Member Information */}
                   <div
-                    className={`${
-                      isArabic ? 'text-right' : 'text-left'
-                    }`}
+                    className={`${isArabic ? 'text-right' : 'text-left'
+                      }`}
                   >
                     <h3
                       className="mb-1 text-base font-bold leading-snug text-gray-900 sm:text-lg"
