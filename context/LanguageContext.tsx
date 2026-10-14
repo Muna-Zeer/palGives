@@ -13,8 +13,6 @@ interface LanguageContextType {
   setLocale: (lang: 'en' | 'ar') => void;
   isArabic: boolean;
 
-  // Kept temporarily so existing components using t() don't break.
-  // It no longer calls any translation API.
   t: (text: string) => Promise<string>;
 }
 
@@ -72,14 +70,13 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'SUPPORT US': 'ادعمنا',
     'Support Us': 'ادعمنا',
 
-    // PalGives
-    PALGIVES: 'فلسطين تعطي',
-    PalGives: 'فلسطين تعطي',
-    palgives: 'فلسطين تعطي',
+  'PALGIVES': 'فلسطين لتمكين الشباب PalGives',
+  'PalGives': 'فلسطين لتمكين الشباب PalGives',
+  'palgives': 'فلسطين لتمكين الشباب PalGives',
 
-    'PALGIVES FOUNDATION': 'مؤسسة فلسطين تعطي',
-    'PalGives Foundation': 'مؤسسة فلسطين تعطي',
-    'palgives foundation': 'مؤسسة فلسطين تعطي',
+  'PALGIVES FOUNDATION': 'فلسطين لتمكين الشباب PalGives',
+  'PalGives Foundation': 'فلسطين لتمكين الشباب PalGives',
+  'palgives foundation': 'فلسطين لتمكين الشباب PalGives',
 
     // Team roles
     'Director of the Medical Committee': 'مديرة اللجنة الطبية',
