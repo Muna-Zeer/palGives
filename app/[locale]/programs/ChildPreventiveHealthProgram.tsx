@@ -339,9 +339,9 @@ export default function ChildPreventiveHealthProgram() {
 
             {/* Pillar 3 */}
             <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden shadow-sm flex flex-col">
-              <div className="relative h-60 w-full">
+              <div className="relative h-60 w-full overflow-hidden">
                 <Image
-                  src="/images/programs/women-health-5.png"
+                  src="/images/programs/Besan-3-img.jpg"
                   alt={
                     isArabic
                       ? 'التثقيف الصحي'
