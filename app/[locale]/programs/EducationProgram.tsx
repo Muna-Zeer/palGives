@@ -27,7 +27,7 @@ export default function EducationProgram() {
       : 'At',
 
     overviewText: isArabic
-      ? 'فلسطين تعطي، نؤمن بأن كل طفل وشاب يستحق الوصول إلى تعليم جيد يلهم الفضول والإبداع والثقة. يعمل برنامج التعليم لدينا على تزويد المتعلمين بالمهارات الأكاديمية والرقمية ومهارات الحياة الأساسية، وإعدادهم للنجاح في المدرسة والعمل والحياة.'
+      ? 'مؤسسة فلسطين لتمكين الشباب نؤمن بأن كل طفل وشاب يستحق الوصول إلى تعليم جيد يلهم الفضول والإبداع والثقة. يعمل برنامج التعليم لدينا على تزويد المتعلمين بالمهارات الأكاديمية والرقمية ومهارات الحياة الأساسية، وإعدادهم للنجاح في المدرسة والعمل والحياة.'
       : ', we believe that every child and young person deserves access to quality education that inspires curiosity, creativity, and confidence. Our',
 
     educationProgram: isArabic
@@ -93,7 +93,7 @@ export default function EducationProgram() {
     impact: isArabic ? 'الأثر' : 'Impact',
 
     impactIntro: isArabic
-      ? 'من خلال هذا البرنامج، تساعد فلسطين تعطي الشباب على:'
+      ? 'من خلال هذا البرنامج، تساعد مؤسسة فلسطين لتمكين الشباب  الشباب على:'
       : 'Through this program, PalGives helps youth:',
 
     improveAcademic: isArabic
@@ -121,7 +121,7 @@ export default function EducationProgram() {
       : 'Be a part of the change!',
 
     joinDescription: isArabic
-      ? 'ادعم فلسطين تعطي في خلق مستقبل أكثر إشراقًا للشباب الفلسطيني. تساهم مساهمتك في تمكين الأطفال من التعلم والنمو واكتشاف كامل إمكاناتهم، طالبًا بعد طالب.'
+      ? 'ادعم مؤسسة فلسطين لتمكين الشباب  في خلق مستقبل أكثر إشراقًا للشباب الفلسطيني. تساهم مساهمتك في تمكين الأطفال من التعلم والنمو واكتشاف كامل إمكاناتهم، طالبًا بعد طالب.'
       : 'Support PalGives in creating brighter futures for Palestinian youth. Your contribution empowers children to learn, grow, and unlock their full potential—one student at a time.',
 
     learnGrow: isArabic

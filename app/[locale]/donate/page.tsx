@@ -21,7 +21,7 @@ export default function DonatePage() {
       : 'we believe that every contribution, no matter how small, can create meaningful change. Your donation helps us empower youth, support education, strengthen community initiatives, and promote sustainable development.',
 
     whySupport: isArabic
-      ? 'لماذا تدعم فلسطين تعطي؟'
+      ? 'لماذا تدعم مؤسسة فلسطين لتمكين الشباب ؟ '
       : 'WHY SUPPORT PALGIVES?',
 
     directSupport: isArabic
@@ -113,7 +113,7 @@ export default function DonatePage() {
       : 'Donate today and help create lasting change.',
 
     copyright: isArabic
-      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 فلسطين تعطي ©'
+      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 مؤسسة فلسطين لتمكين الشباب  ©'
       : 'Youth Empowerment Initiative. All Rights Reserved. -2024–2026 PalGives ©',
   };
 

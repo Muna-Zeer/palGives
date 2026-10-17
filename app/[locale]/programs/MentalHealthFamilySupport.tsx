@@ -33,7 +33,7 @@ export default function MentalHealthFamilySupport() {
     overviewAt: isArabic ? 'في' : 'program at',
 
     overviewText: isArabic
-      ? 'فلسطين تعطي إلى تعزيز الصحة النفسية للأطفال والشباب وأفراد الأسرة، وتوفير الدعم اللازم لتقوية الروابط الأسرية وتمكين الأسر من مواجهة التحديات اليومية بطريقة صحية ومستدامة.'
+      ? 'مؤسسة فلسطين لتمكين الشباب  إلى تعزيز الصحة النفسية للأطفال والشباب وأفراد الأسرة، وتوفير الدعم اللازم لتقوية الروابط الأسرية وتمكين الأسر من مواجهة التحديات اليومية بطريقة صحية ومستدامة.'
       : 'aims to promote the mental well-being of children, youth, and family members, providing the necessary support to strengthen family bonds and empower families to face daily challenges in a healthy and sustainable way.',
 
     programGoals: isArabic ? 'أهداف البرنامج' : 'PROGRAM GOALS',

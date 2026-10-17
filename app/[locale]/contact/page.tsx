@@ -60,7 +60,7 @@ export default function ContactPage() {
       : 'We welcome your visit during official working hours and look forward to connecting with you.',
 
     copyright: isArabic
-      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 فلسطين تعطي ©'
+      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 مؤسسة فلسطين لتمكين الشباب  ©'
       : 'Youth Empowerment Initiative. All Rights Reserved. -2024–2026 PalGives ©',
   };
 

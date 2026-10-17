@@ -22,7 +22,7 @@ export default function HomePage() {
 
     aboutTitle: isArabic ? 'من نحن' : 'About Us',
     aboutText: isArabic
-      ? 'فلسطين تعطي هي منظمة شبابية غير ربحية تسعى إلى تمكين الشباب في مختلف المجالات من خلال تعزيز القيادة الفعالة، وبناء القدرات، وتنفيذ مبادرات مجتمعية هادفة، بهدف إعداد جيل شاب واعٍ وقادر على إحداث تغيير إيجابي في مجتمعاته.'
+      ? 'مؤسسة فلسطين لتمكين الشباب  هي منظمة شبابية غير ربحية تسعى إلى تمكين الشباب في مختلف المجالات من خلال تعزيز القيادة الفعالة، وبناء القدرات، وتنفيذ مبادرات مجتمعية هادفة، بهدف إعداد جيل شاب واعٍ وقادر على إحداث تغيير إيجابي في مجتمعاته.'
       : 'is a non-profit youth organization that seeks to empower young people in various fields by promoting effective leadership, building capacity, and implementing meaningful community initiatives, with the aim of preparing a conscious young generation capable of bringing about positive change in their communities.',
 
     vision: isArabic ? 'الرؤية' : 'Vision',
@@ -209,7 +209,7 @@ export default function HomePage() {
             className="font-semibold notranslate"
             translate="no"
           >
-            {isArabic ? 'فلسطين تعطي' : 'PalGives'}
+            {isArabic ? 'مؤسسة فلسطين لتمكين الشباب ' : 'PalGives'}
           </span>{' '}
           {content.aboutText}
         </p>

@@ -34,7 +34,7 @@ export default function ChildPreventiveHealthProgram() {
     at: isArabic ? 'في' : 'at',
 
     overviewDescription: isArabic
-      ? 'فلسطين تعطي على تقديم الدعم الطبي الاستباقي، والتثقيف الصحي، والتدخلات المبكرة. ومن خلال الشراكة مع المتخصصين في المجال الطبي والمجتمعات المحلية، نعمل على حماية الأطفال من الأمراض التي يمكن الوقاية منها وتشجيع العادات الصحية التي تستمر مدى الحياة.'
+      ? 'مؤسسة فلسطين لتمكين الشباب   على تقديم الدعم الطبي الاستباقي، والتثقيف الصحي، والتدخلات المبكرة. ومن خلال الشراكة مع المتخصصين في المجال الطبي والمجتمعات المحلية، نعمل على حماية الأطفال من الأمراض التي يمكن الوقاية منها وتشجيع العادات الصحية التي تستمر مدى الحياة.'
       : 'focuses on proactive medical support, health education, and early interventions. By partnering with medical professionals and local communities, we safeguard children against preventable illnesses and encourage lifelong wellness habits.',
 
     programGoals: isArabic ? 'أهداف البرنامج' : 'Program Goals',
@@ -140,7 +140,7 @@ export default function ChildPreventiveHealthProgram() {
       : 'Support Child Health Today',
 
     copyright: isArabic
-      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 فلسطين تعطي ©'
+      ? 'مبادرة تمكين الشباب. جميع الحقوق محفوظة. -2024–2026 مؤسسة فلسطين لتمكين الشباب  ©'
       : 'Youth Empowerment Initiative. All Rights Reserved. -2024–2026 PalGives ©',
   };
 

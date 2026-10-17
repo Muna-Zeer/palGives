@@ -70,13 +70,13 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'SUPPORT US': 'ادعمنا',
     'Support Us': 'ادعمنا',
 
-  'PALGIVES': 'فلسطين لتمكين الشباب PalGives',
-  'PalGives': 'فلسطين لتمكين الشباب PalGives',
-  'palgives': 'فلسطين لتمكين الشباب PalGives',
+  'PALGIVES': 'مؤسسة فلسطين لتمكين الشباب  ',
+  'PalGives': 'مؤسسة فلسطين لتمكين الشباب ',
+  'palgives': 'مؤسسة فلسطين لتمكين الشباب ',
 
-  'PALGIVES FOUNDATION': 'فلسطين لتمكين الشباب PalGives',
-  'PalGives Foundation': 'فلسطين لتمكين الشباب PalGives',
-  'palgives foundation': 'فلسطين لتمكين الشباب PalGives',
+  'PALGIVES FOUNDATION': 'مؤسسة فلسطين لتمكين الشباب ',
+  'PalGives Foundation': 'مؤسسة فلسطين لتمكين الشباب ',
+  'palgives foundation': 'مؤسسة فلسطين لتمكين الشباب ',
 
     // Team roles
     'Director of the Medical Committee': 'مديرة اللجنة الطبية',
@@ -88,16 +88,16 @@ const translationGlossary: Record<string, Record<string, string>> = {
     'Director of the Cultural Committee': 'مدير اللجنة الثقافية',
 
     'Director of the Medical Committee at PalGives, overseeing all medical and health-related activities, ensuring quality healthcare and support for children, youth, and the local community.':
-      'مديرة اللجنة الطبية في فلسطين تعطي، وتشرف على جميع الأنشطة الطبية والصحية، وتضمن جودة الرعاية الصحية والدعم للأطفال والشباب والمجتمع المحلي.',
+      'مديرة اللجنة الطبية في مؤسسة فلسطين لتمكين الشباب ، وتشرف على جميع الأنشطة الطبية والصحية، وتضمن جودة الرعاية الصحية والدعم للأطفال والشباب والمجتمع المحلي.',
 
     'Northern Area Coordinator at PalGives, responsible for coordinating activities and initiatives in the northern region, supporting children, youth, and the local community to ensure programs reach all beneficiaries effectively.':
-      'منسقة المنطقة الشمالية في فلسطين تعطي، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمع المحلي، وضمان وصول البرامج إلى جميع المستفيدين بفعالية.',
+      'منسقة المنطقة الشمالية في مؤسسة فلسطين لتمكين الشباب ، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمع المحلي، وضمان وصول البرامج إلى جميع المستفيدين بفعالية.',
 
     'Program Director at PalGives, overseeing the design and implementation of programs and initiatives that empower children and youth and enhance their role in the community.':
-      'مدير البرامج في فلسطين تعطي، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
+      'مدير البرامج في مؤسسة فلسطين لتمكين الشباب ، ويشرف على تصميم وتنفيذ البرامج والمبادرات التي تهدف إلى تمكين الأطفال والشباب وتعزيز دورهم في المجتمع.',
 
     'Directs cultural programs and activities at PalGives, fostering creativity, youth dialogue, and community empowerment through cultural initiatives.':
-      'يدير البرامج والأنشطة الثقافية في فلسطين تعطي، ويساهم في تعزيز الإبداع والحوار بين الشباب وتمكين المجتمع من خلال المبادرات الثقافية.',
+      'يدير البرامج والأنشطة الثقافية في مؤسسة فلسطين لتمكين الشباب ، ويساهم في تعزيز الإبداع والحوار بين الشباب وتمكين المجتمع من خلال المبادرات الثقافية.',
   },
 };
 

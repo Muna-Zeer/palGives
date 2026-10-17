@@ -27,7 +27,7 @@ export default function TeamPage() {
       description:
         'Director of the Medical Committee at PalGives, overseeing medical and health-related activities and supporting quality healthcare services for children, youth, and the local community.',
       descriptionAr:
-        'مديرة اللجنة الطبية في مؤسسة فلسطين تعطي، وتشرف على الأنشطة الطبية والصحية، وتساهم في توفير خدمات رعاية صحية عالية الجودة للأطفال والشباب والمجتمع المحلي.',
+        'مديرة اللجنة الطبية في مؤسسة مؤسسة فلسطين لتمكين الشباب ، وتشرف على الأنشطة الطبية والصحية، وتساهم في توفير خدمات رعاية صحية عالية الجودة للأطفال والشباب والمجتمع المحلي.',
       image: '/images/teamMembers/Bisan.png',
     },
 
@@ -55,7 +55,7 @@ export default function TeamPage() {
       description:
         'Northern Area Coordinator at PalGives, responsible for coordinating activities and initiatives in the northern region and supporting children, youth, and local communities to ensure programs reach beneficiaries effectively.',
       descriptionAr:
-        'منسقة المنطقة الشمالية في مؤسسة فلسطين تعطي، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمعات المحلية، وضمان وصول البرامج إلى المستفيدين بفعالية.',
+        'منسقة المنطقة الشمالية في مؤسسة مؤسسة فلسطين لتمكين الشباب ، وهي مسؤولة عن تنسيق الأنشطة والمبادرات في المنطقة الشمالية، ودعم الأطفال والشباب والمجتمعات المحلية، وضمان وصول البرامج إلى المستفيدين بفعالية.',
       image: '/images/teamMembers/Aya.png',
     },
 
@@ -68,7 +68,7 @@ export default function TeamPage() {
       description:
         "Executive Director of PalGives, leading the organization's daily operations and ensuring the effective implementation of programs and initiatives that advance its mission of empowering children, youth, and women in the Palestinian community.",
       descriptionAr:
-        'المدير التنفيذي في مؤسسة فلسطين تعطي، ويقود العمليات اليومية للمؤسسة ويضمن التنفيذ الفعال للبرامج والمبادرات التي تدعم رسالتها في تمكين الأطفال والشباب والنساء في المجتمع الفلسطيني.',
+        'المدير التنفيذي في مؤسسة مؤسسة فلسطين لتمكين الشباب ، ويقود العمليات اليومية للمؤسسة ويضمن التنفيذ الفعال للبرامج والمبادرات التي تدعم رسالتها في تمكين الأطفال والشباب والنساء في المجتمع الفلسطيني.',
       image: '/images/teamMembers/Anas.png',
     },
 
@@ -81,7 +81,7 @@ export default function TeamPage() {
       description:
         'A volunteer at PalGives specializing in training and team supervision, contributing his experience to developing the skills of children and youth and supporting teams implementing projects.',
       descriptionAr:
-        'متطوع في مؤسسة فلسطين تعطي متخصص في التدريب والإشراف على الفرق، ويساهم بخبرته في تطوير مهارات الأطفال والشباب ودعم الفرق التي تنفذ المشاريع.',
+        'متطوع في مؤسسة مؤسسة فلسطين لتمكين الشباب  متخصص في التدريب والإشراف على الفرق، ويساهم بخبرته في تطوير مهارات الأطفال والشباب ودعم الفرق التي تنفذ المشاريع.',
       image: '/images/teamMembers/Ammar.png',
     },
 
@@ -110,7 +110,7 @@ export default function TeamPage() {
       description:
         'An ambitious young Jerusalemite volunteering with the Community Committee at PalGives. He contributes his energy and skills to community projects and initiatives that support and empower youth and children locally.',
       descriptionAr:
-        'شاب مقدسي طموح يتطوع في لجنة المجتمع المحلي في مؤسسة فلسطين تعطي، ويساهم بجهده ومهاراته في دعم المشاريع والمبادرات المجتمعية وتمكين الشباب والأطفال على المستوى المحلي.',
+        'شاب مقدسي طموح يتطوع في لجنة المجتمع المحلي في مؤسسة مؤسسة فلسطين لتمكين الشباب ، ويساهم بجهده ومهاراته في دعم المشاريع والمبادرات المجتمعية وتمكين الشباب والأطفال على المستوى المحلي.',
       image: '/images/teamMembers/Khalil.png',
     },
 
@@ -137,7 +137,7 @@ export default function TeamPage() {
       role: 'Program Director',
       roleAr: 'مدير البرامج',
       description: 'Program Director at PalGives, supporting the planning and implementation of its programs and initiatives.',
-      descriptionAr: 'مدير البرامج في مؤسسة فلسطين تعطي، ويساهم في التخطيط وتنفيذ برامج المؤسسة ومبادراتها.',
+      descriptionAr: 'مدير البرامج في مؤسسة مؤسسة فلسطين لتمكين الشباب ، ويساهم في التخطيط وتنفيذ برامج المؤسسة ومبادراتها.',
       image: '/images/teamMembers/Baher_2_img.jpg',
     },
 
@@ -205,7 +205,7 @@ export default function TeamPage() {
       description:
         'Volunteer Coordinator at PalGives, responsible for recruiting, organizing, and following up with volunteers. He supports youth engagement in programs, activities, and community initiatives, helping strengthen a culture of volunteering, giving, and youth empowerment.',
       descriptionAr:
-        'منسق المتطوعين في مؤسسة فلسطين تعطي، ويساهم في استقطاب وتنظيم ومتابعة المتطوعين، وتعزيز مشاركتهم في البرامج والأنشطة والمبادرات المجتمعية، بما يدعم ثقافة التطوع والعطاء وتمكين الشباب.',
+        'منسق المتطوعين في مؤسسة مؤسسة فلسطين لتمكين الشباب ، ويساهم في استقطاب وتنظيم ومتابعة المتطوعين، وتعزيز مشاركتهم في البرامج والأنشطة والمبادرات المجتمعية، بما يدعم ثقافة التطوع والعطاء وتمكين الشباب.',
       image: '/images/teamMembers/Mahmoud.jpg',
     },
 
@@ -218,7 +218,7 @@ export default function TeamPage() {
       description:
         'Media & Digital Production Officer at PalGives, contributing to the management and production of the organization’s media and digital content, documenting its activities and initiatives, and strengthening PalGives’ presence and mission of youth empowerment across digital platforms.',
       descriptionAr:
-        'مسؤول الإنتاج الإعلامي والرقمي في مؤسسة فلسطين تعطي، ويساهم في إدارة وإنتاج المحتوى الإعلامي والرقمي للمؤسسة، وتوثيق أنشطتها ومبادراتها، وتعزيز حضور مؤسسة فلسطين تعطي ورسالتها في تمكين الشباب عبر المنصات الرقمية.',
+        'مسؤول الإنتاج الإعلامي والرقمي في مؤسسة مؤسسة فلسطين لتمكين الشباب ، ويساهم في إدارة وإنتاج المحتوى الإعلامي والرقمي للمؤسسة، وتوثيق أنشطتها ومبادراتها، وتعزيز حضور مؤسسة مؤسسة فلسطين لتمكين الشباب  ورسالتها في تمكين الشباب عبر المنصات الرقمية.',
       image: '/images/teamMembers/Amjad.jpg',
     },
 
@@ -270,7 +270,7 @@ export default function TeamPage() {
                   className="font-semibold italic"
                   translate="no"
                 >
-                  فلسطين تعطي
+مؤسسة فلسطين لتمكين الشباب  
                 </span>{' '}
                 من أفراد شغوفين وملتزمين، يكرسون جهودهم لتمكين الأطفال والشباب
                 والنساء في فلسطين.
@@ -299,7 +299,7 @@ export default function TeamPage() {
                   className="font-semibold italic"
                   translate="no"
                 >
-                  فلسطين تعطي
+                  مؤسسة فلسطين لتمكين الشباب  
                 </span>
                 ، نسعى لأن نكون متواضعين ومجتهدين، وفوق كل شيء متعاونين، ونعمل
                 معًا لخلق الفرص وإحداث تغيير هادف.

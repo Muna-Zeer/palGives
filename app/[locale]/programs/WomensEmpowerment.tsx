@@ -25,7 +25,7 @@ export default function WomensEmpowerment() {
       : 'Building Leadership & Resilience',
 
     overviewText: isArabic
-      ? 'يهدف برنامج تمكين المرأة في فلسطين تعطي إلى دعم النساء في فلسطين من خلال تعزيز قدراتهن الشخصية والمهنية والاجتماعية، وتمكينهن من المشاركة الفاعلة في الحياة الاقتصادية والاجتماعية.'
+      ? 'يهدف برنامج تمكين المرأة في مؤسسة فلسطين لتمكين الشباب  إلى دعم النساء في فلسطين من خلال تعزيز قدراتهن الشخصية والمهنية والاجتماعية، وتمكينهن من المشاركة الفاعلة في الحياة الاقتصادية والاجتماعية.'
       : "The Women's Empowerment program at PalGives aims to support women in Palestine by enhancing their personal, professional, and social capacities, enabling them to actively participate in economic and social life.",
 
     programGoals: isArabic ? 'أهداف البرنامج' : 'PROGRAM GOALS',

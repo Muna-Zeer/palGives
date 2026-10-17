@@ -23,7 +23,7 @@ export default function YouthDevelopment() {
     aboutProgram: isArabic ? 'عن البرنامج' : 'ABOUT THE PROGRAM',
 
     aboutParagraph1: isArabic
-      ? 'في فلسطين تعطي، نؤمن بأن الشباب هم القوة الدافعة للتنمية المستدامة والتحول الاجتماعي. وقد صُمم برنامج تنمية الشباب وريادة الأعمال لتزويد الشباب بالمهارات والثقة والفرص التي يحتاجون إليها ليصبحوا مستقلين اقتصاديًا وقادة مسؤولين اجتماعيًا.'
+      ? 'في مؤسسة فلسطين لتمكين الشباب ، نؤمن بأن الشباب هم القوة الدافعة للتنمية المستدامة والتحول الاجتماعي. وقد صُمم برنامج تنمية الشباب وريادة الأعمال لتزويد الشباب بالمهارات والثقة والفرص التي يحتاجون إليها ليصبحوا مستقلين اقتصاديًا وقادة مسؤولين اجتماعيًا.'
       : 'At PalGives, we believe that youth are the driving force of sustainable development and social transformation. Our Youth Development & Entrepreneurship Program is designed to equip young people with the skills, confidence, and opportunities they need to become economically independent and socially responsible leaders.',
 
     aboutParagraph2: isArabic
@@ -39,7 +39,7 @@ export default function YouthDevelopment() {
       : 'Young people in Palestine face significant challenges, including high unemployment rates, limited access to economic opportunities, and restricted exposure to entrepreneurial ecosystems. Many lack access to structured mentorship, professional networks, and startup support systems.',
 
     challengeParagraph2: isArabic
-      ? 'تعالج فلسطين تعطي هذه الفجوات من خلال نموذج تنموي متكامل يركز على الشباب ومصمم لتحقيق تأثير ملموس على المدى الطويل.'
+      ? 'تعالج مؤسسة فلسطين لتمكين الشباب  هذه الفجوات من خلال نموذج تنموي متكامل يركز على الشباب ومصمم لتحقيق تأثير ملموس على المدى الطويل.'
       : 'PalGives addresses these gaps through an integrated, youth-centered development model built for tangible long-term impact.',
 
     strategy: isArabic ? 'الاستراتيجية' : 'Strategy',
@@ -127,7 +127,7 @@ export default function YouthDevelopment() {
       : 'EXPECTED OUTCOMES',
 
     expectedIntro: isArabic
-      ? 'من خلال هذا البرنامج، تهدف فلسطين تعطي إلى:'
+      ? 'من خلال هذا البرنامج، تهدف مؤسسة فلسطين لتمكين الشباب  إلى:'
       : 'Through this program, PalGives aims to:',
 
     outcome1: isArabic
@@ -153,7 +153,7 @@ export default function YouthDevelopment() {
     impactVision: isArabic ? 'رؤية الأثر' : 'IMPACT VISION',
 
     impactIntro: isArabic
-      ? 'من خلال الاستثمار في قدرات الشباب وريادة الأعمال، تساهم فلسطين تعطي في:'
+      ? 'من خلال الاستثمار في قدرات الشباب وريادة الأعمال، تساهم مؤسسة فلسطين لتمكين الشباب  في:'
       : 'By investing in youth capacity and entrepreneurship, PalGives contributes to:',
 
     impact1: isArabic
